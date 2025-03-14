@@ -55,7 +55,8 @@
     <string name="nazwa">Nazwa</string>
     <string name="new_box_name">Nazwa</string>
     <string name="opis">Opis:</string>
-    <string name="przykadowy_opis">Przykadowy opis.</string>
+    <string name="password">Hasło</string>
+    <string name="przykadowy_opis">Opis</string>
     <string name="resetuj_formularz">Resetuj formularz</string>
     <string name="todo">TODO</string>
     <string name="wybierz_kolor">Wybierz kolor tła</string>

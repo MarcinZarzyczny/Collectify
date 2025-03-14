@@ -52,6 +52,7 @@ id changeTextColor
 id creatingLogin
 id creatingPassword
 id cropImageView
+id dram
 id editTextPassword
 id fragment_container
 id guideline10
@@ -109,7 +110,6 @@ id textView31
 id textView32
 id textView33
 id textView34
-id textView35
 id textView4
 id textView5
 id textView6
@@ -156,6 +156,7 @@ string name_email_com
 string nazwa
 string new_box_name
 string opis
+string password
 string przykadowy_opis
 string resetuj_formularz
 string todo

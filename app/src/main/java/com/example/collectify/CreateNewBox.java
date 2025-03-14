@@ -112,11 +112,19 @@ public class CreateNewBox extends Fragment {
     }  public void onResume() {
         super.onResume();
 
+        //Utworzenie dodatkowych stylów dla pul tekstowych.
+        GradientDrawable border = new GradientDrawable();
+        //border.setColor(Color.parseColor("#F1E4FF")); // Kolor tła
+        border.setStroke(4, Color.parseColor("#36115D")); // Grubość i kolor obramowania
+        border.setCornerRadius(25f); // Ustawia promień zaokrąglenia (można pominąć dla kształtu OVAL)
+
+        //Utworzenie dodatkowych stylów dla pul tekstowych.
+        GradientDrawable bordertwo = new GradientDrawable();
+
 
         imageView = requireActivity().findViewById(R.id.boxPhoto);
         ImageButton captureButton = requireActivity().findViewById(R.id.addPhotoButton);
 
-        TextView textView = requireActivity().findViewById(R.id.boxName);
 
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,6 +173,7 @@ public class CreateNewBox extends Fragment {
 
         //Zmiana koloru tekstu w boxie
         boxTitle = requireActivity().findViewById(R.id.boxTitle);
+
         TextView boxContents = requireActivity().findViewById(R.id.boxContents);
         TextView boxCreationDate = requireActivity().findViewById(R.id.boxCreationDate);
         ImageButton changeTextColor = requireActivity().findViewById(R.id.changeTextColor);
@@ -196,6 +205,11 @@ public class CreateNewBox extends Fragment {
 
     // Dodanie tytułu do kontenera
     TextView boxNameTwo = requireActivity().findViewById(R.id.boxName);
+    CardView draw = requireActivity().findViewById(R.id.dram);
+        draw.setBackground(border);
+
+        boxNameTwo.setBackground(bordertwo);
+
         boxNameTwo.addTextChangedListener(new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -217,6 +231,8 @@ public class CreateNewBox extends Fragment {
 
         // Dodanie tytułu do kontenera
         TextView boxInformation = requireActivity().findViewById(R.id.boxInformation);
+        boxInformation.setBackground(border);
+
         boxInformation.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -226,8 +242,7 @@ public class CreateNewBox extends Fragment {
             // Sprawdzanie poprawności loginu
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                boxName = boxNameTwo.getText().toString();
-                boxTitle.setText( boxName);
+
             }
 
             @Override

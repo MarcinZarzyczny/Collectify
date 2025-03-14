@@ -30,7 +30,7 @@
     <string name="box_saple_quantity">Ilość: 12 szt.</string>
     <string name="todo">TODO</string>
     <string name="dodaj_opis_pojemnika">Dodaj opis pojemnika</string>
-    <string name="przykadowy_opis">Przykadowy opis.</string>
+    <string name="przykadowy_opis">Opis</string>
     <string name="zapisz">Zapisz</string>
     <string name="zr_b_zdi_cie">Zrób zdięcie</string>
     <string name="zmie_kolor_pojemnika">Zmień kolor pojemnika</string>
@@ -41,6 +41,7 @@
     <string name="wybierz_kolor">Wybierz kolor tła</string>
     <string name="wybierz_kolor_czcionki">Wybierz kolor czcionki</string>
     <string name="resetuj_formularz">Resetuj formularz</string>
+    <string name="password">Hasło</string>
 
 
 </resources>

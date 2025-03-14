@@ -114,6 +114,7 @@
                             android:inputType="text"
                             android:padding="5dp"
                             android:textAlignment="viewStart"
+                            android:hint="@string/login"
                             android:textColor="#36115D" />
                     </androidx.cardview.widget.CardView>
 
@@ -134,6 +135,7 @@
                             android:drawableTint="#36115D"
                             android:ems="10"
                             android:inputType="textPassword"
+                            android:hint="@string/password"
                             android:padding="5dp" />
 
                     </androidx.cardview.widget.CardView>

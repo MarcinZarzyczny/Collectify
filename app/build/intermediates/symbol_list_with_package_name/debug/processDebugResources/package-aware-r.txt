@@ -3483,6 +3483,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id dram
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3849,7 +3850,6 @@ id textView31
 id textView32
 id textView33
 id textView34
-id textView35
 id textView4
 id textView5
 id textView6
@@ -4328,6 +4328,7 @@ string name_email_com
 string nazwa
 string new_box_name
 string opis
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

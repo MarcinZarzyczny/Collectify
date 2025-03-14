@@ -102,7 +102,7 @@ public class AddNewAccount extends Fragment {
         //Utworzenie dodatkowych stylów dla pul tekstowych.
         GradientDrawable border = new GradientDrawable();
         border.setColor(Color.parseColor("#F1E4FF")); // Kolor tła
-        border.setStroke(4, Color.parseColor("#36115D")); // Grubość i kolor obramowania (czerwony)
+        border.setStroke(4, Color.parseColor("#36115D")); // Grubość i kolor obramowania
         border.setCornerRadius(25f); // Ustawia promień zaokrąglenia (można pominąć dla kształtu OVAL)
         // Uchwyt pola login
         TextView creatingLogin = requireActivity().findViewById(R.id.creatingLogin);
