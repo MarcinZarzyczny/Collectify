@@ -3387,6 +3387,7 @@ id bounceStart
 id box2
 id boxContents
 id boxCreationDate
+id boxInformation
 id boxName
 id boxPhoto
 id boxTitle
@@ -3488,7 +3489,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editText
 id editTextPassword
 id edit_query
 id edit_text_id
@@ -3533,9 +3533,6 @@ id guideline11
 id guideline16
 id guideline18
 id guideline19
-id guideline3
-id guideline4
-id guideline5
 id guideline7
 id guideline8
 id guideline9
@@ -3555,8 +3552,6 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
-id imageButton2
-id imageButton3
 id imageButton4
 id imageButton5
 id imageView3
@@ -3591,6 +3586,7 @@ id line3
 id linear
 id linearLayout
 id linearLayout2
+id linearLayout3
 id listMode
 id list_item
 id locale
@@ -3729,6 +3725,7 @@ id rectangles
 id recyclerViewColors
 id repeatThePassword
 id report_drawn
+id resetForm
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3738,6 +3735,7 @@ id rotate_scroll_wheel
 id rounded
 id row_index_key
 id rtl
+id save
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3833,6 +3831,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView16
 id textView17
 id textView18
@@ -3846,7 +3845,6 @@ id textView26
 id textView27
 id textView29
 id textView3
-id textView30
 id textView31
 id textView32
 id textView33
@@ -4336,6 +4334,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string przykadowy_opis
+string resetuj_formularz
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

@@ -8,316 +8,265 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
 
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Konstukcja hasła: "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:background="#36115D "
-                    android:drawableTint="#FFFFFF"
-                    android:gravity="center"
-                    android:padding="2dp"
-                    android:text="Zasady dotyczace wybóru loginu."
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/guideline5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="25dp"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="13dp"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintGuide_end="9dp" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline4"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="10dp" />
+                    android:paddingBottom="10dp">
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#36115D "
+                        android:drawableTint="#FFFFFF"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Zasady dotyczace wybóru loginu."
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Aby stworzyć odpowiedni login, prosimy o zapoznanie się z poniższymi wytycznymi: "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Długość:"
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Login powinien mieć od 5 do 15 znaków. "
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Znaki dozwolone: "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Używaj tylko liter (a-z, A-Z), cyfr (0-9) oraz znaków specjalnych: _!@#$%^*()+,?:;."
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Unikaj używania spacji oraz znaków specjalnych, które mogą być mylące (np. !, @, #). "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Unikalność: "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Twój login musi być unikalny i nie może być używany przez innego użytkownika.  "
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Złe loginy: Jan Kowalski, user!@#, 12345 "
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Bezpieczeństwo:"
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Nie używaj swojego imienia, nazwiska ani daty urodzenia, aby zwiększyć bezpieczeństwo swojego konta. "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Sprawdzenie:"
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Po wprowadzeniu loginu, system automatycznie sprawdzi jego dostępność. Prosimy o staranne zapoznanie się z tymi wytycznymi przed dokonaniem wyboru. Dziękujemy!"
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Aby stworzyć odpowiedni login, prosimy o zapoznanie się z poniższymi wytycznymi: "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toTopOf="@+id/guideline5" />
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
 
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Aby stworzyć odpowiednie hasło, prosimy o zapoznanie się z poniższymi wytycznymi: "
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#36115D "
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="Zasady dotyczace wyboru hasła."
+                        android:textAlignment="textStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Długość:"
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Aby stworzyć odpowiednie hasło, prosimy o zapoznanie się z poniższymi wytycznymi: "
+                        android:textColor="#36115D "
+                        android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Login powinien mieć od 5 do 15 znaków. "
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Konstukcja hasła: "
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Znaki dozwolone: "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Hasło musi składać się z przynajmniej jednej dużej litery, jednej cyfry i jednego znaku specjalnego. Reszta zasad jest taka sama jak w przypadku wyboru loginu."
+                        android:textAlignment="textStart"
+                        android:textColor="#36115D "
+                        android:textSize="14sp" />
 
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Znaki dozwolone: "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Unikalność: "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Używaj tylko liter (a-z, A-Z), cyfr (0-9) oraz znaków specjalnych: _!@#$%^*()+,?:;."
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-                <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:gravity="center"
-                    android:text="Hasło musi składać się z przynajmniej jednej dużej litery, jednej cyfry i jednego znaku specjalnego. Reszta zasad jest taka sama jak w przypadku wyboru loginu."
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Unikaj używania spacji oraz znaków specjalnych, które mogą być mylące (np. !, @, #). "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Twój login musi być unikalny i nie może być używany przez innego użytkownika.  "
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:text="Złe loginy: Jan Kowalski, user!@#, 12345 "
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Sprawdzenie:"
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Po wprowadzeniu loginu, system automatycznie sprawdzi jego dostępność. Prosimy o staranne zapoznanie się z tymi wytycznymi przed dokonaniem wyboru. Dziękujemy!"
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Nie używaj swojego imienia, nazwiska ani daty urodzenia, aby zwiększyć bezpieczeństwo swojego konta. "
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Bezpieczeństwo:"
-                    android:textAlignment="textStart"
-                    android:textColor="#36115D "
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="#36115D "
-                    android:gravity="center"
-                    android:text="Zasady dotyczace wyboru hasła."
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 

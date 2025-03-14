@@ -215,6 +215,27 @@ public class CreateNewBox extends Fragment {
         }
     });
 
+        // Dodanie tytułu do kontenera
+        TextView boxInformation = requireActivity().findViewById(R.id.boxInformation);
+        boxInformation.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // Możesz użyć tej metody, jeśli potrzebujesz
+            }
+
+            // Sprawdzanie poprawności loginu
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                boxName = boxNameTwo.getText().toString();
+                boxTitle.setText( boxName);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                // creatingLogin.setText(creatingLogi2);
+            }
+        });
+
 
     }
     @SuppressLint("QueryPermissionsNeeded")

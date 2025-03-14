@@ -39,7 +39,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -114,18 +114,18 @@
                     android:text="@string/information_form"
                     android:textAlignment="center"
                     android:textColor="@color/collectifyCoolor"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/boxName"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="5dp"
+                    android:autofillHints=""
                     android:drawableTint="@color/collectifyCoolor"
                     android:ems="10"
-                    android:inputType="text"
                     android:hint="@string/nazwa"
+                    android:inputType="text"
                     android:maxLength="70"
                     android:textColor="@color/collectifyCoolor" />
 
@@ -139,18 +139,19 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/boxInformation"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="10dp"
+                    android:autofillHints=""
                     android:gravity="start"
+                    android:hint="@string/przykadowy_opis"
                     android:inputType="textMultiLine"
                     android:lines="10"
                     android:maxLines="10"
                     android:scrollbars="vertical"
                     android:textAlignment="viewStart"
-                    android:hint="@string/przykadowy_opis"
                     android:textColor="@color/collectifyCoolor" />
 
                 <LinearLayout
@@ -163,9 +164,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:padding="15dp"
@@ -209,9 +210,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1"
                         android:padding="15dp"
                         app:cardCornerRadius="15dp"
@@ -232,20 +233,29 @@
 
                 </LinearLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|center|end"
+                    android:gravity="bottom|end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Nazwa nie może być pusta."
+                        android:textAlignment="center"
+                        android:textColor="#F65D5D" />
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:gravity="bottom"
-                        android:orientation="horizontal"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|center|end"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
@@ -258,7 +268,7 @@
                             app:cardElevation="5dp">
 
                             <ImageButton
-                                android:id="@+id/imageButton2"
+                                android:id="@+id/resetForm"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -281,7 +291,7 @@
                             app:cardElevation="5dp">
 
                             <ImageButton
-                                android:id="@+id/imageButton3"
+                                android:id="@+id/save"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -293,8 +303,7 @@
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
 
             </LinearLayout>
 

@@ -37,6 +37,7 @@ id addPhotoButton
 id box2
 id boxContents
 id boxCreationDate
+id boxInformation
 id boxName
 id boxPhoto
 id boxTitle
@@ -51,7 +52,6 @@ id changeTextColor
 id creatingLogin
 id creatingPassword
 id cropImageView
-id editText
 id editTextPassword
 id fragment_container
 id guideline10
@@ -59,21 +59,17 @@ id guideline11
 id guideline16
 id guideline18
 id guideline19
-id guideline3
-id guideline4
-id guideline5
 id guideline7
 id guideline8
 id guideline9
 id imageButton
-id imageButton2
-id imageButton3
 id imageButton4
 id imageButton5
 id imageView3
 id informationPanelButton
 id linearLayout
 id linearLayout2
+id linearLayout3
 id login
 id loginCorrectMessage
 id main
@@ -84,6 +80,8 @@ id openSettings
 id passwordCorrectnessMessage
 id passwordMatchMessage
 id repeatThePassword
+id resetForm
+id save
 id scrollView2
 id searchView
 id switch1
@@ -93,6 +91,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView16
 id textView17
 id textView18
@@ -106,7 +105,6 @@ id textView26
 id textView27
 id textView29
 id textView3
-id textView30
 id textView31
 id textView32
 id textView33
@@ -159,6 +157,7 @@ string nazwa
 string new_box_name
 string opis
 string przykadowy_opis
+string resetuj_formularz
 string todo
 string wybierz_kolor
 string wybierz_kolor_czcionki
