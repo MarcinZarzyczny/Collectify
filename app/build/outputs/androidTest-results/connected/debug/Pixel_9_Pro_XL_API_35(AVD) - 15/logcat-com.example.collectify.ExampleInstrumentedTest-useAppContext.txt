@@ -1,0 +1,2 @@
+03-03 14:09:47.750  9994 10022 I TestRunner: started: useAppContext(com.example.collectify.ExampleInstrumentedTest)
+03-03 14:09:47.756  9994 10022 I TestRunner: finished: useAppContext(com.example.collectify.ExampleInstrumentedTest)

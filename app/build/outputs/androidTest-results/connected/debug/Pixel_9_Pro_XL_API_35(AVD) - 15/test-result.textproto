@@ -1,0 +1,68 @@
+# 2025-03-03T14:09:50.372727600Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.example.collectify"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1741010989
+      nanos: 685000000
+    }
+    end_time {
+      seconds: 1741010989
+      nanos: 711000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\kanan\\Desktop\\Collectify\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_9_Pro_XL_API_35(AVD) - 15\\logcat-com.example.collectify.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\kanan\\Desktop\\Collectify\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_9_Pro_XL_API_35(AVD) - 15\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\kanan\\Desktop\\Collectify\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_9_Pro_XL_API_35(AVD) - 15\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\kanan\\Desktop\\Collectify\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_9_Pro_XL_API_35(AVD) - 15\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\kanan\\Desktop\\Collectify\\app\\build\\outputs\\androidTest-results\\connected\\debug\\Pixel_9_Pro_XL_API_35(AVD) - 15\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

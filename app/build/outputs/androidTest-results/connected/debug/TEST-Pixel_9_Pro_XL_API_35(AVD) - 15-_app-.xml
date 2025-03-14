@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.collectify.ExampleInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.654" timestamp="2025-03-03T14:09:50" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_9_Pro_XL_API_35(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="useAppContext" classname="com.example.collectify.ExampleInstrumentedTest" time="0.018" />
+</testsuite>

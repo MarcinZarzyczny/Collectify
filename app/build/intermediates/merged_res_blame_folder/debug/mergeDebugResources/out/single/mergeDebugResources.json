@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_create_new_album.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_create_new_album.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_addphoto.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\addphoto.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_box_list.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_box_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-mdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "com.example.collectify.app-debug-36:/layout_fragment_create_new_box.xml.flat",
+        "source": "com.example.collectify.app-main-38:/layout/fragment_create_new_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\font_agbalumo.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\font\\agbalumo.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout-land_fragment_add_new_account.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout-land\\fragment_add_new_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_loginicon_1.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\loginicon_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_create_new_box.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_create_new_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_boxicon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\boxicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-hdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-hdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-xhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-xhdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_add_new_account.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_add_new_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_addphotoicon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\addphotoicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xhdpi_icon_collectify.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xhdpi\\icon_collectify.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\font_artifika.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\font\\artifika.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_add_icon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\add_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_information_panel.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_information_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-hdpi_icon_collectify.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-hdpi\\icon_collectify.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_saveicon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\saveicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-mdpi_icon_collectify.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-mdpi\\icon_collectify.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_albumicon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\albumicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_setingicon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\setingicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_passwordicon_1.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\passwordicon_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxhdpi_icon_collectify.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxhdpi\\icon_collectify.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-anydpi_ic_action_name.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-anydpi\\ic_action_name.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_changetextcoloricon.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\changetextcoloricon.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_create_colection_box.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_create_colection_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-xxhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-xxhdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_changeboxcolor.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\changeboxcolor.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_fragment_setting.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout-land_fragment_login.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout-land\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout_activity_collectify.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout\\activity_collectify.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xxxhdpi_icon_collectify.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-xxxhdpi\\icon_collectify.webp"
+    },
+    {
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-mdpi\\ic_launcher.webp"
+    }
+]
