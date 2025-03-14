@@ -3444,7 +3444,6 @@ int id counterclockwise 0x7f0a009f
 int id cradle 0x7f0a00a0
 int id creatingLogin 0x7f0a00a1
 int id creatingPassword 0x7f0a00a2
-int id cropImageView 0x7f0a00a3
 int id currentState 0x7f0a00a4
 int id cursor_alpha 0x7f0a00a5
 int id cursor_colorpicker 0x7f0a00a6
@@ -3529,7 +3528,6 @@ int id group_divider 0x7f0a00f4
 int id grouping 0x7f0a00f5
 int id groups 0x7f0a00f6
 int id guideline10 0x7f0a00f7
-int id guideline11 0x7f0a00f8
 int id guideline16 0x7f0a00f9
 int id guideline18 0x7f0a00fa
 int id guideline19 0x7f0a00fb
@@ -3552,8 +3550,7 @@ int id ignore 0x7f0a010e
 int id ignoreRequest 0x7f0a010f
 int id image 0x7f0a0110
 int id imageButton 0x7f0a0111
-int id imageButton4 0x7f0a0112
-int id imageButton5 0x7f0a0113
+int id imageButton2 0x7f0a0286
 int id imageView3 0x7f0a0114
 int id image_view_crop 0x7f0a0115
 int id image_view_logo 0x7f0a0116
@@ -3656,7 +3653,6 @@ int id mtrl_picker_text_input_range_start 0x7f0a0175
 int id mtrl_picker_title_text 0x7f0a0176
 int id mtrl_view_tag_bottom_padding 0x7f0a0177
 int id multiply 0x7f0a0178
-int id myButton 0x7f0a0179
 int id navigation_bar_item_active_indicator_view 0x7f0a017a
 int id navigation_bar_item_icon_container 0x7f0a017b
 int id navigation_bar_item_icon_view 0x7f0a017c
@@ -3681,6 +3677,8 @@ int id on 0x7f0a018e
 int id onInterceptTouchReturnSwipe 0x7f0a018f
 int id openAddnewAccont 0x7f0a0190
 int id openBoxItems 0x7f0a0191
+int id openCreateAlbum 0x7f0a0292
+int id openCreateBox 0x7f0a0293
 int id openSettings 0x7f0a0192
 int id open_search_bar_text_view 0x7f0a0193
 int id open_search_view_background 0x7f0a0194
@@ -4169,6 +4167,7 @@ int string abc_searchview_description_voice 0x7f120017
 int string abc_shareactionprovider_share_with 0x7f120018
 int string abc_shareactionprovider_share_with_application 0x7f120019
 int string abc_toolbar_collapse_description 0x7f12001a
+int string album 0x7f1200e0
 int string androidx_startup 0x7f12001b
 int string app_name 0x7f12001c
 int string appbar_scrolling_view_behavior 0x7f12001d
@@ -4178,6 +4177,7 @@ int string bottomsheet_action_expand 0x7f120020
 int string bottomsheet_action_expand_halfway 0x7f120021
 int string bottomsheet_drag_handle_clicked 0x7f120022
 int string bottomsheet_drag_handle_content_description 0x7f120023
+int string box 0x7f1200e1
 int string box_sample_name 0x7f120024
 int string box_saple_quantity 0x7f120025
 int string call_notification_answer_action 0x7f120026
@@ -4195,14 +4195,18 @@ int string data_dodania_31_01_2024 0x7f1200cc
 int string dialog_negative_button_text 0x7f120031
 int string dialog_positive_button_text 0x7f120032
 int string dialog_title 0x7f120033
+int string dodaj_nowy_album 0x7f1200e2
+int string dodaj_nowy_box 0x7f1200e3
 int string dodaj_opis_pojemnika 0x7f1200ca
 int string error_a11y_label 0x7f120034
 int string error_icon_content_description 0x7f120035
 int string exposed_dropdown_menu_content_description 0x7f120036
 int string fab_transformation_scrim_behavior 0x7f120037
 int string fab_transformation_sheet_behavior 0x7f120038
+int string haslo_nie_moze_być_krotsze_niz_6_znakow 0x7f1200d7
 int string hello_blank_fragment 0x7f120039
 int string hide_bottom_view_on_scroll_behavior 0x7f12003a
+int string i 0x7f1200d8
 int string icon_content_description 0x7f12003b
 int string ikona_zdiecie_pojemnika 0x7f1200cd
 int string info_error_in_the_second_password 0x7f12003c
@@ -4333,6 +4337,8 @@ int string path_password_eye 0x7f1200b6
 int string path_password_eye_mask_strike_through 0x7f1200b7
 int string path_password_eye_mask_visible 0x7f1200b8
 int string path_password_strike_through 0x7f1200b9
+int string podaj_nazwe_kontenera 0x7f1200dd
+int string powtorz_haslo 0x7f1200d9
 int string przykadowy_opis 0x7f1200cb
 int string resetuj_formularz 0x7f1200d5
 int string search_menu_title 0x7f1200ba
@@ -4343,6 +4349,9 @@ int string side_sheet_accessibility_pane_title 0x7f1200be
 int string side_sheet_behavior 0x7f1200bf
 int string status_bar_notification_info_overflow 0x7f1200c0
 int string todo 0x7f1200c1
+int string tworzenie_nowego_albumu 0x7f1200de
+int string tworzenie_nowego_konta 0x7f1200dc
+int string tworzenie_nowego_kontenera 0x7f1200df
 int string ucrop_crop 0x7f1200c2
 int string ucrop_error_input_data_is_absent 0x7f1200c3
 int string ucrop_label_edit_photo 0x7f1200c4
@@ -4351,6 +4360,9 @@ int string ucrop_menu_crop 0x7f1200c6
 int string ucrop_mutate_exception_hint 0x7f1200c7
 int string ucrop_rotate 0x7f1200c8
 int string ucrop_scale 0x7f1200c9
+int string utworz_konto 0x7f1200da
+int string utworz_nowa_kolekcje 0x7f1200e4
+int string wpisz_swoj_login 0x7f1200db
 int string wybierz_kolor 0x7f1200d3
 int string wybierz_kolor_czcionki 0x7f1200d4
 int string zapisz 0x7f1200ce

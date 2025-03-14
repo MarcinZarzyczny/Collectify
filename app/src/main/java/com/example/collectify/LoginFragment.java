@@ -130,7 +130,6 @@ public class LoginFragment extends Fragment {
                 Log.d(TAG, "LF- Dane wysłane: " + v);
 
 
-                AddNewAccount AddNewAccount = new AddNewAccount();
                 FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, AddNewAccount.class, null);
                 ; // R.id.fragment_container to ID kontenera w głównym layout
@@ -155,7 +154,6 @@ public class LoginFragment extends Fragment {
                 if(accounts.setCheck(cleanHtml(login.getText().toString()), cleanHtml(password.getText().toString()))) {
                     login.setText("");
                     password.setText("");
-                    AddNewAccount AddNewAccount = new AddNewAccount();
                     FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.fragment_container, BoxList.class, null);
                     ; // R.id.fragment_container to ID kontenera w głównym layout

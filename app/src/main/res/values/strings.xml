@@ -25,7 +25,7 @@
     <string name="name_email_com">name@email.com</string>
     <string name="opis">Opis:</string>
     <string name="new_box_name">Nazwa</string>
-    <string name="information_form">Wypełnij formulaż aby utowrzyć nowy box.</string>
+    <string name="information_form">Tworzenie nowego kontenera.</string>
     <string name="box_sample_name">Box 1</string>
     <string name="box_saple_quantity">Ilość: 12 szt.</string>
     <string name="todo">TODO</string>
@@ -42,6 +42,20 @@
     <string name="wybierz_kolor_czcionki">Wybierz kolor czcionki</string>
     <string name="resetuj_formularz">Resetuj formularz</string>
     <string name="password">Hasło</string>
+    <string name="wpisz_swoj_login">Wpisz swój login.</string>
+    <string name="haslo_nie_moze_być_krotsze_niz_6_znakow">Hasło nie może być krótsze niż 6 znaków, posiadać przynajmniej jedną cyfrę, jedną durzą literą oraz znak specjalny.</string>
+    <string name="powtorz_haslo">Powtórz hasło.</string>
+    <string name="i">i</string>
+    <string name="utworz_konto">Utwórz konto.</string>
+    <string name="tworzenie_nowego_konta">Tworzenie nowego konta.</string>
+    <string name="tworzenie_nowego_kontenera">Tworzenie nowego kontenera.</string>
+    <string name="podaj_nazwe_kontenera">Podaj nazwę kontenera.</string>
+    <string name="tworzenie_nowego_albumu">Tworzenie nowego albumu.</string>
+    <string name="utworz_nowa_kolekcje">Utwórz nową kolekcję.</string>
+    <string name="dodaj_nowy_box">Dodaj nowy kontener.</string>
+    <string name="box">Box</string>
+    <string name="dodaj_nowy_album">Dodaj nowy album.</string>
+    <string name="album">Album</string>
 
 
 </resources>

@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import com.google.android.material.button.MaterialButton;
 import org.jsoup.Jsoup;
@@ -302,7 +303,7 @@ public class AddNewAccount extends Fragment {
 
 
         // Ustawienie nasłuchu zdarzenia oneClick na przycisku dodawania nowego konta
-        MaterialButton addAnAccount = requireActivity().findViewById(R.id.addAnAccount);
+        ImageButton addAnAccount = requireActivity().findViewById(R.id.addAnAccount);
         addAnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

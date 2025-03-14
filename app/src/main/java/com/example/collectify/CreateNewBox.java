@@ -109,7 +109,9 @@ public class CreateNewBox extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_create_new_box, container, false);
-    }  public void onResume() {
+    }
+    @Override
+    public void onResume() {
         super.onResume();
 
         //Utworzenie dodatkowych stylów dla pul tekstowych.

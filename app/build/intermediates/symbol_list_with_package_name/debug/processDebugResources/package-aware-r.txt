@@ -3445,7 +3445,6 @@ id counterclockwise
 id cradle
 id creatingLogin
 id creatingPassword
-id cropImageView
 id currentState
 id cursor_alpha
 id cursor_colorpicker
@@ -3530,7 +3529,6 @@ id group_divider
 id grouping
 id groups
 id guideline10
-id guideline11
 id guideline16
 id guideline18
 id guideline19
@@ -3553,8 +3551,7 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
-id imageButton4
-id imageButton5
+id imageButton2
 id imageView3
 id image_view_crop
 id image_view_logo
@@ -3657,7 +3654,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id myButton
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3682,6 +3678,8 @@ id on
 id onInterceptTouchReturnSwipe
 id openAddnewAccont
 id openBoxItems
+id openCreateAlbum
+id openCreateBox
 id openSettings
 id open_search_bar_text_view
 id open_search_view_background
@@ -4170,6 +4168,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string album
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4179,6 +4178,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string box
 string box_sample_name
 string box_saple_quantity
 string call_notification_answer_action
@@ -4196,14 +4196,18 @@ string data_dodania_31_01_2024
 string dialog_negative_button_text
 string dialog_positive_button_text
 string dialog_title
+string dodaj_nowy_album
+string dodaj_nowy_box
 string dodaj_opis_pojemnika
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string haslo_nie_moze_być_krotsze_niz_6_znakow
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string i
 string icon_content_description
 string ikona_zdiecie_pojemnika
 string info_error_in_the_second_password
@@ -4334,6 +4338,8 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string podaj_nazwe_kontenera
+string powtorz_haslo
 string przykadowy_opis
 string resetuj_formularz
 string search_menu_title
@@ -4344,6 +4350,9 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 string todo
+string tworzenie_nowego_albumu
+string tworzenie_nowego_konta
+string tworzenie_nowego_kontenera
 string ucrop_crop
 string ucrop_error_input_data_is_absent
 string ucrop_label_edit_photo
@@ -4352,6 +4361,9 @@ string ucrop_menu_crop
 string ucrop_mutate_exception_hint
 string ucrop_rotate
 string ucrop_scale
+string utworz_konto
+string utworz_nowa_kolekcje
+string wpisz_swoj_login
 string wybierz_kolor
 string wybierz_kolor_czcionki
 string zapisz

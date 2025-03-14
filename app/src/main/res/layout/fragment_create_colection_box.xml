@@ -24,7 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/collectifyCoolor"
-                android:text="Utwurz nową kolekcję."
+                android:padding="5dp"
+                android:text="@string/utworz_nowa_kolekcje"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="16sp"
@@ -32,7 +33,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="40"
                 android:orientation="horizontal">
 
@@ -53,21 +54,21 @@
                         android:padding="5dp">
 
                         <ImageButton
-                            android:id="@+id/imageButton4"
+                            android:id="@+id/openCreateBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
-                            android:contentDescription="Dodaj nowy box"
+                            android:contentDescription="@string/dodaj_nowy_box"
                             android:src="@drawable/boxicon" />
 
                         <TextView
                             android:id="@+id/textView31"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Box"
+                            android:text="@string/box"
                             android:textAlignment="center"
                             android:textColor="@color/collectifyCoolor"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -88,21 +89,21 @@
                         android:padding="5dp">
 
                         <ImageButton
-                            android:id="@+id/imageButton5"
+                            android:id="@+id/openCreateAlbum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
-                            android:contentDescription="Dodaj nowy album."
+                            android:contentDescription="@string/dodaj_nowy_album"
                             android:src="@drawable/albumicon" />
 
                         <TextView
                             android:id="@+id/textView32"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Album"
+                            android:text="@string/album"
                             android:textAlignment="center"
                             android:textColor="@color/collectifyCoolor"
-                            android:textSize="16dp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
