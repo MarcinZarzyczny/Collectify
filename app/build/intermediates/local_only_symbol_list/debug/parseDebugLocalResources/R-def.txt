@@ -26,6 +26,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable loginicon_1
 drawable passwordicon_1
+drawable reseticon
 drawable saveicon
 drawable setingicon
 font agbalumo
@@ -65,6 +66,7 @@ id guideline7
 id guideline8
 id guideline9
 id imageButton
+id imageButton2
 id imageButton3
 id imageButton4
 id imageButton5

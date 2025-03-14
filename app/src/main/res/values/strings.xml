@@ -40,8 +40,7 @@
     <string name="nazwa">Nazwa</string>
     <string name="wybierz_kolor">Wybierz kolor tła</string>
     <string name="wybierz_kolor_czcionki">Wybierz kolor czcionki</string>
-
-
+    <string name="resetuj_formularz">Resetuj formularz</string>
 
 
 </resources>

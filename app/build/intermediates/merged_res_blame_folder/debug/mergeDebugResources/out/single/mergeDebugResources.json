@@ -60,16 +60,16 @@
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_boxicon.xml.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\boxicon.xml"
     },
     {
-        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-hdpi_ic_action_name.png.flat",
@@ -138,6 +138,10 @@
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_albumicon.xml.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\albumicon.xml"
+    },
+    {
+        "merged": "com.example.collectify.app-debug-36:/drawable_reseticon.xml.flat",
+        "source": "com.example.collectify.app-main-38:/drawable/reseticon.xml"
     },
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

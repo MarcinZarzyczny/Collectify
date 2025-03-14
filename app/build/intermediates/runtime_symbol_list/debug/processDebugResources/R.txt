@@ -3249,6 +3249,7 @@ int drawable notification_template_icon_low_bg 0x7f0800ef
 int drawable notification_tile_bg 0x7f0800f0
 int drawable notify_panel_notification_icon_bg 0x7f0800f1
 int drawable passwordicon_1 0x7f0800f2
+int drawable reseticon 0x7f08010f
 int drawable saveicon 0x7f0800f3
 int drawable setingicon 0x7f0800f4
 int drawable test_level_drawable 0x7f0800f5
@@ -3553,6 +3554,7 @@ int id ignore 0x7f0a010e
 int id ignoreRequest 0x7f0a010f
 int id image 0x7f0a0110
 int id imageButton 0x7f0a0111
+int id imageButton2 0x7f0a0286
 int id imageButton3 0x7f0a0287
 int id imageButton4 0x7f0a0112
 int id imageButton5 0x7f0a0113
