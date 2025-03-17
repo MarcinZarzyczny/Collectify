@@ -146,10 +146,7 @@ public class LoginFragment extends Fragment {
         openBoxList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Log.d( TAG,"Click działa poprawnie");
-                sendData("Nowe dane");
-                Log.d(TAG, "LF- Dane wysłane: " + v);
-                // Sprawdzanie czy logi ichasło jest w bazie kont.
+                // Sprawdzanie czy logi i chasło jest w bazie kont.
                 // jeśli tak zaloguj do programu
                 if(accounts.setCheck(cleanHtml(login.getText().toString()), cleanHtml(password.getText().toString()))) {
                     login.setText("");

@@ -1,20 +1,34 @@
 package com.example.collectify;
 
-import static android.content.ContentValues.TAG;
+import android.content.Context;
+import android.graphics.Typeface;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import android.util.Log;
-
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModel;
+
+import java.net.CookieHandler;
+import java.util.ArrayList;
 
 public class Account extends ViewModel {
     private String login;
     private String password;
     private boolean doNotLogOut = false;
+    public ArrayList<Object> boxList = new ArrayList<>();
+
 
     // Konstruktor
     public Account(String login, String pasword) {
         this.login = login;
         this.password = pasword;
+
         //Log.d( TAG,"LF- konto utworzone login: " + this.login + ", haslo: " + this.password);
 
     }
@@ -43,5 +57,13 @@ public class Account extends ViewModel {
         this.doNotLogOut = doNotLogOut;
     }
 
-
+    public int boxListSize(){
+        return this.boxList.size();
+    }
+    public void addNewBox(Object item){
+        this.boxList.add(item);
+    }
+    public ArrayList<Object>getBoxList() {
+        return this.boxList;
+    }
 }

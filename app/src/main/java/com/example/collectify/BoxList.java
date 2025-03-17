@@ -2,6 +2,7 @@ package com.example.collectify;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.util.Log;
 import android.util.TypedValue;
@@ -81,9 +83,22 @@ public class BoxList extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
+
 
         myLayout = requireActivity().findViewById(R.id.box2);
-        addCardView("Box 1", "20 szt.");
+
+        // Upewnij się, że myLayout nie jest null
+        if (myLayout != null) {
+            Log.e(TAG, "--------------------------------------------------------------");
+            accounts.createBox("login1", myLayout, requireContext());
+        } else {
+            Log.e(TAG, "-----------------------2------------------------------------");
+
+            Log.e(TAG, "myLayout is null. Check if R.id.box2 exists in the current layout.");
+        }
+
+
 
         addNewBox = requireActivity().findViewById(R.id.addNewBox);
         addNewBox.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +137,7 @@ public class BoxList extends Fragment {
 
 
     }
-    private void addCardView(String nazwa, String ilosc) {
+    /*private void addCardView(String nazwa, String ilosc) {
         {
             CardView cardView = new CardView(requireContext());
             LinearLayout.LayoutParams cardParams = new LinearLayout.LayoutParams(
@@ -196,5 +211,5 @@ public class BoxList extends Fragment {
             myLayout.addView(cardView);
 
         }
-    }
+    }*/
 }

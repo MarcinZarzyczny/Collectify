@@ -1,11 +1,15 @@
 package com.example.collectify;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import androidx.activity.result.ActivityResultLauncher;
@@ -13,9 +17,12 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +34,8 @@ import android.widget.TextView;
 import com.mrudultora.colorpicker.ColorPickerPopUp;
 
 import org.jetbrains.annotations.Nullable;
+
+import java.util.jar.Attributes;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -50,9 +59,9 @@ public class CreateNewBox extends Fragment {
     private int textColor = Color.parseColor("#FF36115D");
     public String boxName = "";
 
-    private String boxInformation = "";
+    private String opis = "";
 
-    private int boxPhoto = 1;
+    private Bitmap imageBitmap;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -88,6 +97,8 @@ public class CreateNewBox extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+
+
         takePictureLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -96,7 +107,7 @@ public class CreateNewBox extends Fragment {
                         assert data != null;
                         Bundle extras = data.getExtras();
                         assert extras != null;
-                        Bitmap imageBitmap = (Bitmap) extras.get("data");
+                        imageBitmap = (Bitmap) extras.get("data");
                         imageView.setImageBitmap(imageBitmap);
                     }
                 }
@@ -107,9 +118,12 @@ public class CreateNewBox extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_create_new_box, container, false);
     }
+
+
     @Override
     public void onResume() {
         super.onResume();
@@ -126,8 +140,6 @@ public class CreateNewBox extends Fragment {
 
         imageView = requireActivity().findViewById(R.id.boxPhoto);
         ImageButton captureButton = requireActivity().findViewById(R.id.addPhotoButton);
-
-
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -231,7 +243,6 @@ public class CreateNewBox extends Fragment {
         }
     });
 
-        // Dodanie tytułu do kontenera
         TextView boxInformation = requireActivity().findViewById(R.id.boxInformation);
         boxInformation.setBackground(border);
 
@@ -244,6 +255,7 @@ public class CreateNewBox extends Fragment {
             // Sprawdzanie poprawności loginu
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                opis = boxInformation.getText().toString();
 
             }
 
@@ -252,6 +264,22 @@ public class CreateNewBox extends Fragment {
                 // creatingLogin.setText(creatingLogi2);
             }
         });
+        // Obsługa przycisku zapisz
+        ImageButton save = requireActivity().findViewById(R.id.save);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Click działa");
+                if(boxTitle.getText().toString() != "") {
+                    Box box = new Box(boxTitle.getText().toString(), opis, boxBackgroundColor, textColor, imageBitmap);
+                    Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
+                    accounts.addNewBox("login1", box);
+                }
+
+            }
+        });
+
+
 
 
     }

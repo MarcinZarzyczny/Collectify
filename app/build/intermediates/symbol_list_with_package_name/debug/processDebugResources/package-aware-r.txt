@@ -3724,6 +3724,7 @@ id rectangles
 id recyclerViewColors
 id repeatThePassword
 id report_drawn
+id reset
 id resetForm
 id reverseSawtooth
 id right
@@ -4192,7 +4193,6 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-string data_dodania_31_01_2024
 string dialog_negative_button_text
 string dialog_positive_button_text
 string dialog_title
@@ -4341,6 +4341,7 @@ string path_password_strike_through
 string podaj_nazwe_kontenera
 string powtorz_haslo
 string przykadowy_opis
+string przykałdowe_zdięcie_albumu
 string resetuj_formularz
 string search_menu_title
 string searchbar_scrolling_view_behavior
@@ -4349,6 +4350,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string szt
 string todo
 string tworzenie_nowego_albumu
 string tworzenie_nowego_konta
@@ -4363,6 +4365,7 @@ string ucrop_rotate
 string ucrop_scale
 string utworz_konto
 string utworz_nowa_kolekcje
+string utworzone
 string wpisz_swoj_login
 string wybierz_kolor
 string wybierz_kolor_czcionki

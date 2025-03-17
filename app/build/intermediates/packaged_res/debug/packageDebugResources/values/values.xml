@@ -31,8 +31,7 @@
     <string name="app_name">Collectify</string>
     <string name="box">Box</string>
     <string name="box_sample_name">Box 1</string>
-    <string name="box_saple_quantity">Ilość: 12 szt.</string>
-    <string name="data_dodania_31_01_2024">Data dodania: 31.01.2024</string>
+    <string name="box_saple_quantity">12 szt.</string>
     <string name="dodaj_nowy_album">Dodaj nowy album.</string>
     <string name="dodaj_nowy_box">Dodaj nowy kontener.</string>
     <string name="dodaj_opis_pojemnika">Dodaj opis pojemnika</string>
@@ -65,13 +64,16 @@
     <string name="podaj_nazwe_kontenera">Podaj nazwę kontenera.</string>
     <string name="powtorz_haslo">Powtórz hasło.</string>
     <string name="przykadowy_opis">Opis</string>
+    <string name="przykałdowe_zdięcie_albumu">Przykładowe zdjęcie albumu.</string>
     <string name="resetuj_formularz">Resetuj formularz</string>
+    <string name="szt">szt.</string>
     <string name="todo">TODO</string>
     <string name="tworzenie_nowego_albumu">Tworzenie nowego albumu.</string>
     <string name="tworzenie_nowego_konta">Tworzenie nowego konta.</string>
     <string name="tworzenie_nowego_kontenera">Tworzenie nowego kontenera.</string>
     <string name="utworz_konto">Utwórz konto.</string>
     <string name="utworz_nowa_kolekcje">Utwórz nową kolekcję.</string>
+    <string name="utworzone">Utworzone: 22.11.2024</string>
     <string name="wpisz_swoj_login">Wpisz swój login.</string>
     <string name="wybierz_kolor">Wybierz kolor tła</string>
     <string name="wybierz_kolor_czcionki">Wybierz kolor czcionki</string>

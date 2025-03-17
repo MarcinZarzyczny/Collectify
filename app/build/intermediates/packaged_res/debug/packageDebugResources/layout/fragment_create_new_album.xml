@@ -32,7 +32,7 @@
                     android:layout_height="125dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:contentDescription="Zdięcie albumu"
+                    android:contentDescription="@string/przykałdowe_zdięcie_albumu"
                     android:src="@drawable/albumicon" />
 
                 <LinearLayout
@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:gravity="bottom|end"
-                        android:text="@string/data_dodania_31_01_2024"
+                        android:text="@string/utworzone"
                         android:textAlignment="textEnd"
                         android:textColor="@color/collectifyCoolor"
                         android:textSize="11sp" />
@@ -133,7 +133,7 @@
                         android:ems="10"
                         android:hint="@string/nazwa"
                         android:inputType="text"
-                        android:maxLength="60"
+                        android:maxLength="40"
                         android:padding="5dp"
                         android:textAlignment="textStart"
                         android:textColor="@color/collectifyCoolor"

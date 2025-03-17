@@ -48,7 +48,7 @@ public class CreateNewAlbum extends Fragment {
     private int textColor = Color.parseColor("#FF36115D");
     public String boxName = "";
 
-    private String boxInformation = "";
+    private String albumInformation = "";
 
     private int boxPhoto = 1;
 
@@ -112,6 +112,8 @@ public class CreateNewAlbum extends Fragment {
     public void onResume() {
         super.onResume();
 
+        super.onResume();
+
         //Utworzenie dodatkowych stylów dla pul tekstowych.
         GradientDrawable border = new GradientDrawable();
         //border.setColor(Color.parseColor("#F1E4FF")); // Kolor tła
@@ -129,7 +131,7 @@ public class CreateNewAlbum extends Fragment {
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ActivityCompat.checkSelfPermission(requireActivity(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                if (ActivityCompat.checkSelfPermission(requireActivity(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                     ActivityCompat.requestPermissions(requireActivity(), new String[]{Manifest.permission.CAMERA}, 100);
                 } else {
                     dispatchTakePictureIntent();
@@ -242,7 +244,7 @@ public class CreateNewAlbum extends Fragment {
             // Sprawdzanie poprawności loginu
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                albumInformation = boxInformation.getText().toString();
             }
 
             @Override
@@ -250,6 +252,7 @@ public class CreateNewAlbum extends Fragment {
                 // creatingLogin.setText(creatingLogi2);
             }
         });
+
 
 
     }

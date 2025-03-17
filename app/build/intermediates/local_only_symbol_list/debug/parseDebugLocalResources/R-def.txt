@@ -79,6 +79,7 @@ id openSettings
 id passwordCorrectnessMessage
 id passwordMatchMessage
 id repeatThePassword
+id reset
 id resetForm
 id save
 id scrollView2
@@ -131,7 +132,6 @@ string app_name
 string box
 string box_sample_name
 string box_saple_quantity
-string data_dodania_31_01_2024
 string dodaj_nowy_album
 string dodaj_nowy_box
 string dodaj_opis_pojemnika
@@ -164,13 +164,16 @@ string password
 string podaj_nazwe_kontenera
 string powtorz_haslo
 string przykadowy_opis
+string przykałdowe_zdięcie_albumu
 string resetuj_formularz
+string szt
 string todo
 string tworzenie_nowego_albumu
 string tworzenie_nowego_konta
 string tworzenie_nowego_kontenera
 string utworz_konto
 string utworz_nowa_kolekcje
+string utworzone
 string wpisz_swoj_login
 string wybierz_kolor
 string wybierz_kolor_czcionki

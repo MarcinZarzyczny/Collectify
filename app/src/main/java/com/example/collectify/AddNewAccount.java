@@ -42,11 +42,6 @@ public class AddNewAccount extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AddNewAccount() {
-        // Required empty public constructor
-
-    }
-
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -203,7 +198,7 @@ public class AddNewAccount extends Fragment {
             }
         });
 
-        // Uchwyt i głownego pola hasła
+        // Uchwyt głownego pola hasła
         TextView passwordOne = requireActivity().findViewById(R.id.creatingPassword);
         // Ustawienie wyglądu
         passwordOne.setBackground(border);
