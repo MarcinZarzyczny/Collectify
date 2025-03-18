@@ -2,23 +2,15 @@ package com.example.collectify;
 
 import static android.content.ContentValues.TAG;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -28,14 +20,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.Manifest;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.mrudultora.colorpicker.ColorPickerPopUp;
-
-import org.jetbrains.annotations.Nullable;
-
-import java.util.jar.Attributes;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,15 +48,14 @@ public class CreateNewBox extends Fragment {
     private TextView boxTitle;
     private ActivityResultLauncher<Intent> takePictureLauncher;
 
-    private int boxBackgroundColor = Color.parseColor("#FF36115D");
+    private int boxBackgroundColor = Color.parseColor("#FFFFFF");
     ;
-    private int textColor = Color.parseColor("#FF36115D");
+    private int textColor = Color.parseColor("#36115D");
     public String boxName = "";
 
     private String opis = "";
 
     private Bitmap imageBitmap;
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -127,7 +120,6 @@ public class CreateNewBox extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
         //Utworzenie dodatkowych stylów dla pul tekstowych.
         GradientDrawable border = new GradientDrawable();
         //border.setColor(Color.parseColor("#F1E4FF")); // Kolor tła

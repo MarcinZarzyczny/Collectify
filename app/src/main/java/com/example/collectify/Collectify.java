@@ -1,22 +1,16 @@
 package com.example.collectify;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.LiveData;
 
 
 public class Collectify extends AppCompatActivity {
@@ -55,7 +49,7 @@ public class Collectify extends AppCompatActivity {
         // Rozpocznij transakcję
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         // Zastąp kontener fragmentu nowym fragmentem
-        fragmentTransaction.replace(R.id.fragment_container, CreateNewBox.class, null);
+        fragmentTransaction.replace(R.id.fragment_container, BoxList.class, null);
         // Dodaj transakcję do stosu (opcjonalnie)
         fragmentTransaction.addToBackStack(null);
         // Zatwierdź transakcję

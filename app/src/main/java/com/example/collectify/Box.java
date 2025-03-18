@@ -15,7 +15,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModel;
 
 import java.text.SimpleDateFormat;
@@ -91,6 +90,7 @@ public class Box extends ViewModel {
     }
 
     public void createBox(ViewGroup myLayout, Context context) {
+
         // Tworzenie CardView
         CardView cardView = new CardView(context);
         LinearLayout.LayoutParams cardParams = new LinearLayout.LayoutParams(
@@ -123,7 +123,11 @@ public class Box extends ViewModel {
         // Tworzenie ImageView
         ImageView imageView = new ImageView(context);
         imageView.setLayoutParams(new LinearLayout.LayoutParams(400, 400));
-        imageView.setImageBitmap(this.imageBitmap); // Ustaw obrazek
+        if (imageBitmap != null) {
+            imageView.setImageBitmap(this.imageBitmap); // Ustaw obrazek
+        }else{
+            imageView.setImageResource(R.mipmap.ic_launcher); // Ustaw obrazek
+        }
         imageView.setVisibility(View.VISIBLE);
         imageView.setPadding(10, 10, 10, 10);
 
@@ -198,4 +202,5 @@ public class Box extends ViewModel {
         myLayout.addView(cardView);
 
     }
+
 }
