@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.collectify.app-debug-36:/layout_fragment_create_new_album.xml.flat",
-        "source": "com.example.collectify.app-main-38:/layout/fragment_create_new_album.xml"
-    },
-    {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -30,6 +26,10 @@
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable-mdpi_ic_action_name.png.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-mdpi\\ic_action_name.png"
+    },
+    {
+        "merged": "com.example.collectify.app-debug-36:/layout_fragment_create_new_box.xml.flat",
+        "source": "com.example.collectify.app-main-38:/layout/fragment_create_new_box.xml"
     },
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout-land_fragment_add_new_account.xml.flat",

@@ -126,7 +126,7 @@ public class Box extends ViewModel {
         if (imageBitmap != null) {
             imageView.setImageBitmap(this.imageBitmap); // Ustaw obrazek
         }else{
-            imageView.setImageResource(R.mipmap.ic_launcher); // Ustaw obrazek
+            imageView.setImageResource(R.drawable.boxicon); // Ustaw obrazek
         }
         imageView.setVisibility(View.VISIBLE);
         imageView.setPadding(10, 10, 10, 10);
@@ -198,7 +198,7 @@ public class Box extends ViewModel {
         // Zastosuj LayoutParams do cardView
         cardView.setLayoutParams(params);
 
-        // Dodawanie cardView do myLayout ⬤
+        // Dodawanie cardView do myLayout
         myLayout.addView(cardView);
 
     }

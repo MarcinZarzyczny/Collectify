@@ -227,6 +227,8 @@ public class CreateNewBox extends Fragment {
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             boxName = boxNameTwo.getText().toString();
             boxTitle.setText( boxName);
+            TextView informationNameBox = requireActivity().findViewById(R.id.informationNameBox);
+            informationNameBox.setText("");
         }
 
         @Override
@@ -244,7 +246,6 @@ public class CreateNewBox extends Fragment {
                 // Możesz użyć tej metody, jeśli potrzebujesz
             }
 
-            // Sprawdzanie poprawności loginu
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 opis = boxInformation.getText().toString();
@@ -253,7 +254,6 @@ public class CreateNewBox extends Fragment {
 
             @Override
             public void afterTextChanged(Editable s) {
-                // creatingLogin.setText(creatingLogi2);
             }
         });
         // Obsługa przycisku zapisz
@@ -262,7 +262,11 @@ public class CreateNewBox extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "Click działa");
-                if(boxTitle.getText().toString() != "") {
+
+                if (isOnlyWhitespace(boxTitle.getText().toString())) {
+                    TextView informationNameBox = requireActivity().findViewById(R.id.informationNameBox);
+                    informationNameBox.setText("Podaj poprawną nazwę kontenera.");
+                } else {
                     Box box = new Box(boxTitle.getText().toString(), opis, boxBackgroundColor, textColor, imageBitmap);
                     Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
                     accounts.addNewBox("login1", box);
@@ -282,7 +286,9 @@ public class CreateNewBox extends Fragment {
             takePictureLauncher.launch(takePictureIntent);
         }
     }
-
+    public boolean isOnlyWhitespace(String title) {
+        return title != null && title.matches("^\\s*$");
+    }
 
 
 

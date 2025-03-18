@@ -3562,6 +3562,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id informationNameBox
 id informationPanelButton
 id invisible
 id inward
@@ -3831,7 +3832,6 @@ id textView11
 id textView12
 id textView13
 id textView14
-id textView15
 id textView16
 id textView17
 id textView18

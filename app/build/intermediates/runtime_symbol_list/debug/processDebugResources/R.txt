@@ -3561,6 +3561,7 @@ int id immediateStop 0x7f0a0119
 int id included 0x7f0a011a
 int id indeterminate 0x7f0a011b
 int id info 0x7f0a011c
+int id informationNameBox 0x7f0a0286
 int id informationPanelButton 0x7f0a011d
 int id invisible 0x7f0a011e
 int id inward 0x7f0a011f
@@ -3830,7 +3831,6 @@ int id textView11 0x7f0a0226
 int id textView12 0x7f0a0227
 int id textView13 0x7f0a0228
 int id textView14 0x7f0a0229
-int id textView15 0x7f0a022a
 int id textView16 0x7f0a022b
 int id textView17 0x7f0a022c
 int id textView18 0x7f0a022d

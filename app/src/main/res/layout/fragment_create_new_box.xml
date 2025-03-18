@@ -36,7 +36,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:contentDescription="@string/ikona_zdiecie_pojemnika"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/boxicon" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -248,7 +248,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/informationNameBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
