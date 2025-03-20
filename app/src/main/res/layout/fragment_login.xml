@@ -88,7 +88,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wpisz login oraz hasło, aby się zalogować. "
+                        android:text="@string/wpisz_login_oraz_haslo_aby_sie_zalogowac"
                         android:textAlignment="center"
                         android:textColor="#36115D"
                         android:textSize="14sp" />
@@ -104,6 +104,7 @@
                             android:id="@+id/login"
                             android:layout_width="270dp"
                             android:layout_height="match_parent"
+                            android:autofillHints=""
                             android:background="#F1E4FF "
                             android:drawableStart="@drawable/loginicon_1"
                             android:drawablePadding="10dp"
@@ -129,6 +130,7 @@
                             android:id="@+id/editTextPassword"
                             android:layout_width="270dp"
                             android:layout_height="wrap_content"
+                            android:autofillHints=""
                             android:background="#F1E4FF "
                             android:drawableStart="@drawable/passwordicon_1"
                             android:drawablePadding="10dp"
@@ -148,19 +150,19 @@
                         app:cardElevation="5dp">
 
                         <Button
-                            android:id="@+id/openBoxItems"
+                            android:id="@+id/loginButoon"
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:background="@color/collectifyCoolor"
-                            android:text="Zaloguj się" />
+                            android:text="@string/zaloguj_sie" />
                     </androidx.cardview.widget.CardView>
 
                     <Switch
-                        android:id="@+id/switch1"
+                        android:id="@+id/rememberMySwich"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Zapamietaj mnie"
+                        android:text="@string/zapamietaj_mnie"
                         android:textColor="#36115D"
                         android:textSize="12sp"
                         android:textStyle="bold"

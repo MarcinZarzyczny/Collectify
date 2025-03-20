@@ -23,6 +23,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link BoxList#newInstance} factory method to
@@ -34,13 +36,6 @@ public class BoxList extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    private LinearLayout myLayout;
-    private ImageButton addNewBox;
 
     public BoxList() {
         // Required empty public constructor
@@ -68,8 +63,9 @@ public class BoxList extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -84,30 +80,22 @@ public class BoxList extends Fragment {
     public void onResume() {
         super.onResume();
         Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
+        TextView loginUser = requireActivity().findViewById(R.id.loginUser);
+        loginUser.setText(Accounts.logindAccount.getLogin());
 
 
-        myLayout = requireActivity().findViewById(R.id.box2);
-
+        LinearLayout myLayout = requireActivity().findViewById(R.id.box2);
         // Upewnij się, że myLayout nie jest null
         if (myLayout != null) {
-            Log.e(TAG, "--------------------------------------------------------------");
-            accounts.createBox("login1", myLayout, requireContext());
-        } else {
-            Log.e(TAG, "-----------------------2------------------------------------");
-
-            Log.e(TAG, "myLayout is null. Check if R.id.box2 exists in the current layout.");
+            Accounts.logindAccount.createBox(myLayout, requireContext());
         }
 
-
-
-        addNewBox = requireActivity().findViewById(R.id.addNewBox);
+        ImageButton addNewBox = requireActivity().findViewById(R.id.addNewBox);
         addNewBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddNewAccount AddNewAccount = new AddNewAccount();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentTransaction transaction = Objects.requireNonNull(requireActivity()).getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, CreateCollection.class, null);
-                ; // R.id.fragment_container to ID kontenera w głównym layout
                 transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
 
@@ -115,19 +103,12 @@ public class BoxList extends Fragment {
         });
 
 
-        ImageButton openAddNewAccount = requireActivity().findViewById(R.id.openSettings);
-        openAddNewAccount.setOnClickListener(new View.OnClickListener() {
+        ImageButton openSetings = requireActivity().findViewById(R.id.openSettings);
+        openSetings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Log.d( TAG,"Click działa poprawnie");
-
-                Log.d(TAG, "LF- Dane wysłane: " + v);
-
-
-                AddNewAccount AddNewAccount = new AddNewAccount();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentTransaction transaction = Objects.requireNonNull(requireActivity()).getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, Setting.class, null);
-                ; // R.id.fragment_container to ID kontenera w głównym layout
                 transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
 

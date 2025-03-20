@@ -70,7 +70,7 @@ public class CollectifyTest {
         accounts = new Accounts();
         // Dodaj przykładowe konta do testów
         //when
-        Account account = new Account("user1", "Password1@");
+        Account account = new Account("user1", "Password1@", true);
         accounts.setAccounts(account);
 
     }

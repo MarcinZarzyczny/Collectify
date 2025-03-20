@@ -3590,7 +3590,9 @@ id listMode
 id list_item
 id locale
 id login
+id loginButoon
 id loginCorrectMessage
+id loginUser
 id ltr
 id m3_side_sheet
 id main
@@ -3678,7 +3680,6 @@ id off
 id on
 id onInterceptTouchReturnSwipe
 id openAddnewAccont
-id openBoxItems
 id openCreateAlbum
 id openCreateBox
 id openSettings
@@ -3723,6 +3724,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewColors
+id rememberMySwich
 id repeatThePassword
 id report_drawn
 id reset
@@ -3804,7 +3806,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3826,7 +3827,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView10
 id textView11
 id textView12
@@ -4180,6 +4180,7 @@ string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string box
+string box_one
 string box_sample_name
 string box_saple_quantity
 string call_notification_answer_action
@@ -4199,6 +4200,7 @@ string dialog_title
 string dodaj_nowy_album
 string dodaj_nowy_box
 string dodaj_opis_pojemnika
+string dodawanie_nowej_kolekcji
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4209,6 +4211,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string i
 string icon_content_description
+string ikona_konta
 string ikona_zdiecie_pojemnika
 string info_error_in_the_second_password
 string info_login
@@ -4328,10 +4331,13 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string na_poczatku_nazwy_nie_moze_byc_bialego_znaku
 string name_email_com
 string nazwa
 string new_box_name
+string nowa_kolekcja_dodana
 string opis
+string otworz_ustawienia
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -4339,6 +4345,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string podaj_nazwe_kontenera
+string podaj_poprawna_nazwe_kolekcji
 string powtorz_haslo
 string przykadowy_opis
 string przykałdowe_zdięcie_albumu
@@ -4366,9 +4373,12 @@ string ucrop_scale
 string utworz_konto
 string utworz_nowa_kolekcje
 string utworzone
+string wpisz_login_oraz_haslo_aby_sie_zalogowac
 string wpisz_swoj_login
 string wybierz_kolor
 string wybierz_kolor_czcionki
+string zaloguj_sie
+string zapamietaj_mnie
 string zapisz
 string zmie_kolor_pojemnika
 string zmien_kolor_czcionki

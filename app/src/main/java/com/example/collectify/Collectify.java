@@ -12,8 +12,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 
 public class Collectify extends AppCompatActivity {
+
 
 
     @Override
@@ -21,10 +25,8 @@ public class Collectify extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        ItemFragmentName itemFragmentName = new ViewModelProvider(this).get(ItemFragmentName.class);
-        Accounts accounts = new ViewModelProvider(this).get(Accounts.class);
 
-        //Log.d("MainActivity", "Dane startowe: " +  itemFragmentName.getSelectedData());
+
 
         setContentView(R.layout.activity_collectify);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -34,28 +36,38 @@ public class Collectify extends AppCompatActivity {
 
         });
 
-
-        itemFragmentName = new ViewModelProvider(this).get(ItemFragmentName.class);
-
-
-        itemFragmentName.getSelectedData().observe(this, data -> {
-            Log.d("MainActivity", "MA- Otrzymane dane: " + data);
-        });
-        //Tymczasowe konto
-        Account account = new Account("login1", "polpol1U#");
+        Accounts accounts = new ViewModelProvider(this).get(Accounts.class);
+        Account account = new Account("login1", "polpol1U#", false);
         accounts.setAccounts(account);
-        // Utwórz instancję FragmentManager
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        // Rozpocznij transakcję
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        // Zastąp kontener fragmentu nowym fragmentem
-        fragmentTransaction.replace(R.id.fragment_container, BoxList.class, null);
-        // Dodaj transakcję do stosu (opcjonalnie)
-        fragmentTransaction.addToBackStack(null);
-        // Zatwierdź transakcję
-        fragmentTransaction.commit();
 
 
+        // Użyj getAccounts() do uzyskania listy kont
+        for (int i = 0; i < accounts.getAccounts().size(); i++) {
+            if (accounts.getAccounts().get(i).getDoNotLogOut() == true) {
+                // Utwórz instancję FragmentManager
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                // Rozpocznij transakcję
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                // Zastąp kontener fragmentu nowym fragmentem
+                fragmentTransaction.replace(R.id.fragment_container, BoxList.class, null);
+                // Dodaj transakcję do stosu (opcjonalnie)
+                fragmentTransaction.addToBackStack(null);
+                // Zatwierdź transakcję
+                fragmentTransaction.commit();
+                break;
+            }else{
+                // Utwórz instancję FragmentManager
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                // Rozpocznij transakcję
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                // Zastąp kontener fragmentu nowym fragmentem
+                fragmentTransaction.replace(R.id.fragment_container, LoginFragment.class, null);
+                // Dodaj transakcję do stosu (opcjonalnie)
+                // Zatwierdź transakcję
+                fragmentTransaction.commit();
+                break;
+            }
+        }
     }
 
 }

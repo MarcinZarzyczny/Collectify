@@ -1,20 +1,10 @@
 package com.example.collectify;
-
 import android.content.Context;
-import android.graphics.Typeface;
-import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.nfc.Tag;
+import android.util.Log;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModel;
-
-import java.net.CookieHandler;
 import java.util.ArrayList;
 
 public class Account extends ViewModel {
@@ -25,9 +15,10 @@ public class Account extends ViewModel {
 
 
     // Konstruktor
-    public Account(String login, String pasword) {
+    public Account(String login, String pasword, Boolean doNotLogOut) {
         this.login = login;
         this.password = pasword;
+        this.doNotLogOut = doNotLogOut;
 
         //Log.d( TAG,"LF- konto utworzone login: " + this.login + ", haslo: " + this.password);
 
@@ -54,7 +45,14 @@ public class Account extends ViewModel {
     }
 
     public void setDoNotLogOut(boolean doNotLogOut) {
-        this.doNotLogOut = doNotLogOut;
+        if (doNotLogOut){
+            this.doNotLogOut = doNotLogOut;
+            Log.d("TAG", "nie wylogować ustawione na true");
+
+        }else{
+            this.doNotLogOut = false;
+            Log.d("TAG", "Nie wylogować ustawione na false");
+        }
     }
 
     public int boxListSize(){
@@ -65,5 +63,14 @@ public class Account extends ViewModel {
     }
     public ArrayList<Object>getBoxList() {
         return this.boxList;
+    }
+
+
+    public void createBox(LinearLayout myLayout, Context context) {
+        for (int index = 0; index < this.boxList.size(); index++) {
+            if (this.boxList.get(index) instanceof Box) {
+                ((Box) this.boxList.get(index)).createBox(myLayout, context);
+            }
+        }
     }
 }

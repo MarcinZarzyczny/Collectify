@@ -1,7 +1,5 @@
 package com.example.collectify;
 
-import static android.content.ContentValues.TAG;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -14,7 +12,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,22 +41,20 @@ public class CreateNewBox extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private static final int REQUEST_IMAGE_CAPTURE = 1;
-    private ImageView imageView;
+    private ImageView boxIconImage;
     private CardView boxVidget;
-    private TextView boxTitle;
+    private TextView titleTextView;
     private ActivityResultLauncher<Intent> takePictureLauncher;
-
     private int boxBackgroundColor = Color.parseColor("#FFFFFF");
-    ;
     private int textColor = Color.parseColor("#36115D");
     public String boxName = "";
-
     private String opis = "";
-
     private Bitmap imageBitmap;
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private TextView boxInformation;
+    private TextView boxNameValue;
+    private TextView informationNameView;
+    private TextView dateView;
+    private TextView boxDescription;
 
     public CreateNewBox() {
         // Required empty public constructor
@@ -86,8 +82,9 @@ public class CreateNewBox extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
 
@@ -101,7 +98,7 @@ public class CreateNewBox extends Fragment {
                         Bundle extras = data.getExtras();
                         assert extras != null;
                         imageBitmap = (Bitmap) extras.get("data");
-                        imageView.setImageBitmap(imageBitmap);
+                        boxIconImage.setImageBitmap(imageBitmap);
                     }
                 }
         );
@@ -126,11 +123,15 @@ public class CreateNewBox extends Fragment {
         border.setStroke(4, Color.parseColor("#36115D")); // Grubość i kolor obramowania
         border.setCornerRadius(25f); // Ustawia promień zaokrąglenia (można pominąć dla kształtu OVAL)
 
+        boxInformation = requireActivity().findViewById(R.id.boxInformation);
+        informationNameView = requireActivity().findViewById(R.id.informationNameBox);
+
+
+
         //Utworzenie dodatkowych stylów dla pul tekstowych.
         GradientDrawable bordertwo = new GradientDrawable();
 
-
-        imageView = requireActivity().findViewById(R.id.boxPhoto);
+        boxIconImage = requireActivity().findViewById(R.id.boxPhoto);
         ImageButton captureButton = requireActivity().findViewById(R.id.addPhotoButton);
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -178,10 +179,9 @@ public class CreateNewBox extends Fragment {
         });
 
         //Zmiana koloru tekstu w boxie
-        boxTitle = requireActivity().findViewById(R.id.boxTitle);
-
-        TextView boxContents = requireActivity().findViewById(R.id.boxContents);
-        TextView boxCreationDate = requireActivity().findViewById(R.id.boxCreationDate);
+        titleTextView = requireActivity().findViewById(R.id.boxTitle);
+        boxDescription = requireActivity().findViewById(R.id.boxContents);
+        dateView = requireActivity().findViewById(R.id.boxCreationDate);
         ImageButton changeTextColor = requireActivity().findViewById(R.id.changeTextColor);
         String textFromResourcesTwo = getString(R.string.wybierz_kolor_czcionki);
 
@@ -196,9 +196,9 @@ public class CreateNewBox extends Fragment {
                     @Override
                     public void onColorPicked(int color) {
                         textColor = color;
-                        boxTitle.setTextColor(textColor);
-                        boxContents.setTextColor(textColor);
-                        boxCreationDate.setTextColor(textColor);
+                        titleTextView.setTextColor(textColor);
+                        boxDescription.setTextColor(textColor);
+                        dateView.setTextColor(textColor);
                     }
                     @Override
                     public void onCancel() {
@@ -210,36 +210,35 @@ public class CreateNewBox extends Fragment {
         });
 
     // Dodanie tytułu do kontenera
-    TextView boxNameTwo = requireActivity().findViewById(R.id.boxName);
+    boxNameValue = requireActivity().findViewById(R.id.boxName);
     CardView draw = requireActivity().findViewById(R.id.dram);
         draw.setBackground(border);
 
-        boxNameTwo.setBackground(bordertwo);
+        boxNameValue.setBackground(bordertwo);
 
-        boxNameTwo.addTextChangedListener(new TextWatcher() {
+        boxNameValue.addTextChangedListener(new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         // Możesz użyć tej metody, jeśli potrzebujesz
         }
-
-        // Sprawdzanie poprawności loginu
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            boxName = boxNameTwo.getText().toString();
-            boxTitle.setText( boxName);
-            TextView informationNameBox = requireActivity().findViewById(R.id.informationNameBox);
-            informationNameBox.setText("");
-        }
 
+            if(startsWithWhitespace(boxNameValue.getText().toString())){
+                informationNameView.setText(R.string.na_poczatku_nazwy_nie_moze_byc_bialego_znaku);
+            }else {
+                boxName = boxNameValue.getText().toString();
+                titleTextView.setText(boxName);
+                informationNameView.setText("");
+            }
+        }
         @Override
         public void afterTextChanged(Editable s) {
             // creatingLogin.setText(creatingLogi2);
         }
     });
 
-        TextView boxInformation = requireActivity().findViewById(R.id.boxInformation);
         boxInformation.setBackground(border);
-
         boxInformation.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -261,17 +260,24 @@ public class CreateNewBox extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Click działa");
-
-                if (isOnlyWhitespace(boxTitle.getText().toString())) {
-                    TextView informationNameBox = requireActivity().findViewById(R.id.informationNameBox);
-                    informationNameBox.setText("Podaj poprawną nazwę kontenera.");
-                } else {
-                    Box box = new Box(boxTitle.getText().toString(), opis, boxBackgroundColor, textColor, imageBitmap);
-                    Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
-                    accounts.addNewBox("login1", box);
+                // Log.d(TAG, "Click działa");
+                if(!startsWithWhitespace(boxNameValue.getText().toString()) && !boxNameValue.getText().toString().trim().isEmpty()){
+                    Box box = new Box(boxName, opis, boxBackgroundColor, textColor, imageBitmap);
+                    //Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
+                    Accounts.logindAccount.addNewBox(box);
+                    resetForm();
+                    informationNameView.setText(R.string.nowa_kolekcja_dodana);
                 }
+            }
+        });
 
+        // Obsługa przycisku reset
+        ImageButton reset = requireActivity().findViewById(R.id.resetForm);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // Log.d(TAG, "Click działa");
+                resetForm ();
             }
         });
 
@@ -286,10 +292,38 @@ public class CreateNewBox extends Fragment {
             takePictureLauncher.launch(takePictureIntent);
         }
     }
+    // Sprwdzanie czy ciag skłąsa się z samych białych znaków.
     public boolean isOnlyWhitespace(String title) {
         return title != null && title.matches("^\\s*$");
     }
+    // sprawdzanei czy na poczatku ciągu są białe znaki.
+    public static boolean startsWithWhitespace(String input) {
+        return input != null && input.matches("^\\s+.*");
+    }
 
+    public void resetForm(){
+       boxName = "";
+       boxNameValue.setText(boxName);
+       opis = "";
+       boxInformation.setText(opis);
+       boxBackgroundColor = Color.parseColor("#FFFFFF");
+        int dpValue = 30;
+        float pxValue = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpValue, getResources().getDisplayMetrics());
+       boxVidget.setBackgroundColor(boxBackgroundColor);
+       // Ustaw tło jako GradientDrawable
+       GradientDrawable drawable = new GradientDrawable();
+       drawable.setColor(boxBackgroundColor);
+       drawable.setCornerRadius(pxValue); // Ustaw promień zaokrąglenia
+       boxVidget.setBackground(drawable); // Ustaw tło widżetu
+       textColor = Color.parseColor("#36115D");
+       boxDescription.setTextColor(textColor);
+       dateView.setTextColor(textColor);
+       titleTextView.setTextColor(textColor);
+       titleTextView.setText(R.string.box_one);
+       informationNameView.setText(R.string.podaj_poprawna_nazwe_kolekcji);
+       imageBitmap = null;
+       boxIconImage.setImageResource(R.drawable.boxicon);
+    }
 
 
 }

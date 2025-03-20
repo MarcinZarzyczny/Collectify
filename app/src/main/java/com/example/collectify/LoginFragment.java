@@ -2,6 +2,7 @@ package com.example.collectify;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -16,11 +17,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.util.Log;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,10 +40,6 @@ public class LoginFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -64,16 +67,17 @@ public class LoginFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
 
         }
-        //Button burtonButton = getActivity().findViewById(R.id.button2);
     }
 
     private ItemFragmentName viewModel;
-    private Account account;
     Accounts accounts;
+
+    private boolean rememberMy = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -82,10 +86,6 @@ public class LoginFragment extends Fragment {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(requireActivity()).get(ItemFragmentName.class);
         accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
-
-        //Create a new Account
-       //Account account = new Account("Jan", "gfdgg");
-
 
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         //sendData("Mój tekst");
@@ -105,6 +105,19 @@ public class LoginFragment extends Fragment {
                 Log.d(TAG, " LF- Dane otrzymane: " + name);
             }
         });
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch rememberMySwich = requireActivity().findViewById(R.id.rememberMySwich);
+        rememberMySwich.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(requireActivity().getApplicationContext(), "Włączono", Toast.LENGTH_SHORT).show();
+                    rememberMy = true;
+                } else {
+                    Toast.makeText(requireActivity().getApplicationContext(), "Wyłączono", Toast.LENGTH_SHORT).show();
+                    rememberMy = false;
+                }
+            }
+        });
 
         //stylowanie pul tekstowych
         GradientDrawable border = new GradientDrawable();
@@ -120,7 +133,7 @@ public class LoginFragment extends Fragment {
         password.setPadding(15, login.getPaddingTop(), login.getPaddingRight(), login.getPaddingBottom());
         int color = ContextCompat.getColor(requireActivity(), R.color.collectifyCoolor);
 
-
+        // Otwieranie fragmentu z formularzem dodawania nowego konta.
         ImageButton openAddNewAccount = requireActivity().findViewById(R.id.openAddnewAccont);
         openAddNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,11 +141,8 @@ public class LoginFragment extends Fragment {
                 //Log.d( TAG,"Click działa poprawnie");
                 sendData("Nowe dane");
                 Log.d(TAG, "LF- Dane wysłane: " + v);
-
-
                 FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, AddNewAccount.class, null);
-                ; // R.id.fragment_container to ID kontenera w głównym layout
                 transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
 
@@ -140,20 +150,20 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        Button openBoxList = requireActivity().findViewById(R.id.openBoxItems);
+        // Logowanie do aplikacji
+        Button openBoxList = requireActivity().findViewById(R.id.loginButoon);
         openBoxList.setBackgroundColor(color);
-
         openBoxList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Sprawdzanie czy logi i chasło jest w bazie kont.
                 // jeśli tak zaloguj do programu
-                if(accounts.setCheck(cleanHtml(login.getText().toString()), cleanHtml(password.getText().toString()))) {
+                if(accounts.setCheck(cleanHtml(login.getText().toString()), cleanHtml(password.getText().toString()), rememberMy)) {
                     login.setText("");
                     password.setText("");
+                    rememberMy = false;
                     FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.fragment_container, BoxList.class, null);
-                    ; // R.id.fragment_container to ID kontenera w głównym layout
                     transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                     transaction.commit();
                 //W przeciwnym wypadku wyswietl komunikat o błędzie

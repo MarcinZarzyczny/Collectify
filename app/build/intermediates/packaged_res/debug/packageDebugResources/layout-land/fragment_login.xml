@@ -144,7 +144,7 @@
                             app:cardElevation="5dp">
 
                             <Button
-                                android:id="@+id/openBoxItems"
+                                android:id="@+id/loginButoon"
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:background="@color/collectifyCoolor"
@@ -152,7 +152,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <Switch
-                            android:id="@+id/switch1"
+                            android:id="@+id/rememberMySwich"
                             android:layout_width="150dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"

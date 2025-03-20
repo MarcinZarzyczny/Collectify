@@ -58,6 +58,16 @@
     <string name="przykałdowe_zdięcie_albumu">Przykładowe zdjęcie albumu.</string>
     <string name="szt">szt.</string>
     <string name="utworzone">Utworzone: 22.11.2024</string>
+    <string name="nowa_kolekcja_dodana">*Nowa kolekcja dodana.</string>
+    <string name="na_poczatku_nazwy_nie_moze_byc_bialego_znaku">*Na poczatku nazwy nie może być białego znaku.</string>
+    <string name="box_one">Box 1</string>
+    <string name="podaj_poprawna_nazwe_kolekcji">Podaj poprawną nazwę kolekcji.</string>
+    <string name="wpisz_login_oraz_haslo_aby_sie_zalogowac">Wpisz login oraz hasło, aby się zalogować.</string>
+    <string name="zaloguj_sie">Zaloguj się</string>
+    <string name="zapamietaj_mnie">Zapamietaj mnie</string>
+    <string name="dodawanie_nowej_kolekcji">Dodawanie nowej kolekcji.</string>
+    <string name="otworz_ustawienia">Otwórz ustawienia.</string>
+    <string name="ikona_konta">Ikona konta</string>
 
 
 </resources>

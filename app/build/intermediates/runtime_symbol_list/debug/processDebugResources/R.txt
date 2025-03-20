@@ -3589,7 +3589,9 @@ int id listMode 0x7f0a0134
 int id list_item 0x7f0a0135
 int id locale 0x7f0a0136
 int id login 0x7f0a0137
+int id loginButoon 0x7f0a0287
 int id loginCorrectMessage 0x7f0a0138
+int id loginUser 0x7f0a0289
 int id ltr 0x7f0a0139
 int id m3_side_sheet 0x7f0a013a
 int id main 0x7f0a013b
@@ -3677,7 +3679,6 @@ int id off 0x7f0a018c
 int id on 0x7f0a018d
 int id onInterceptTouchReturnSwipe 0x7f0a018e
 int id openAddnewAccont 0x7f0a018f
-int id openBoxItems 0x7f0a0190
 int id openCreateAlbum 0x7f0a0191
 int id openCreateBox 0x7f0a0192
 int id openSettings 0x7f0a0193
@@ -3722,6 +3723,7 @@ int id radio 0x7f0a01b9
 int id ratio 0x7f0a01ba
 int id rectangles 0x7f0a01bb
 int id recyclerViewColors 0x7f0a01bc
+int id rememberMySwich 0x7f0a0288
 int id repeatThePassword 0x7f0a01bd
 int id report_drawn 0x7f0a01be
 int id reset 0x7f0a01bf
@@ -3803,7 +3805,6 @@ int id stretch 0x7f0a020a
 int id submenuarrow 0x7f0a020b
 int id submit_area 0x7f0a020c
 int id supportScrollUp 0x7f0a020d
-int id switch1 0x7f0a020e
 int id tabMode 0x7f0a020f
 int id tag_accessibility_actions 0x7f0a0210
 int id tag_accessibility_clickable_spans 0x7f0a0211
@@ -3825,7 +3826,6 @@ int id textSpacerNoButtons 0x7f0a0220
 int id textSpacerNoTitle 0x7f0a0221
 int id textStart 0x7f0a0222
 int id textTop 0x7f0a0223
-int id textView 0x7f0a0224
 int id textView10 0x7f0a0225
 int id textView11 0x7f0a0226
 int id textView12 0x7f0a0227
@@ -4179,6 +4179,7 @@ int string bottomsheet_action_expand_halfway 0x7f120022
 int string bottomsheet_drag_handle_clicked 0x7f120023
 int string bottomsheet_drag_handle_content_description 0x7f120024
 int string box 0x7f120025
+int string box_one 0x7f1200e7
 int string box_sample_name 0x7f120026
 int string box_saple_quantity 0x7f120027
 int string call_notification_answer_action 0x7f120028
@@ -4198,6 +4199,7 @@ int string dialog_title 0x7f120035
 int string dodaj_nowy_album 0x7f120036
 int string dodaj_nowy_box 0x7f120037
 int string dodaj_opis_pojemnika 0x7f120038
+int string dodawanie_nowej_kolekcji 0x7f1200ef
 int string error_a11y_label 0x7f120039
 int string error_icon_content_description 0x7f12003a
 int string exposed_dropdown_menu_content_description 0x7f12003b
@@ -4208,6 +4210,7 @@ int string hello_blank_fragment 0x7f12003f
 int string hide_bottom_view_on_scroll_behavior 0x7f120040
 int string i 0x7f120041
 int string icon_content_description 0x7f120042
+int string ikona_konta 0x7f1200f1
 int string ikona_zdiecie_pojemnika 0x7f120043
 int string info_error_in_the_second_password 0x7f120044
 int string info_login 0x7f120045
@@ -4327,10 +4330,13 @@ int string mtrl_switch_track_decoration_path 0x7f1200b6
 int string mtrl_switch_track_path 0x7f1200b7
 int string mtrl_timepicker_cancel 0x7f1200b8
 int string mtrl_timepicker_confirm 0x7f1200b9
+int string na_poczatku_nazwy_nie_moze_byc_bialego_znaku 0x7f1200e8
 int string name_email_com 0x7f1200ba
 int string nazwa 0x7f1200bb
 int string new_box_name 0x7f1200bc
+int string nowa_kolekcja_dodana 0x7f1200e9
 int string opis 0x7f1200bd
+int string otworz_ustawienia 0x7f1200f0
 int string password 0x7f1200be
 int string password_toggle_content_description 0x7f1200bf
 int string path_password_eye 0x7f1200c0
@@ -4338,6 +4344,7 @@ int string path_password_eye_mask_strike_through 0x7f1200c1
 int string path_password_eye_mask_visible 0x7f1200c2
 int string path_password_strike_through 0x7f1200c3
 int string podaj_nazwe_kontenera 0x7f1200c4
+int string podaj_poprawna_nazwe_kolekcji 0x7f1200eb
 int string powtorz_haslo 0x7f1200c5
 int string przykadowy_opis 0x7f1200c6
 int string przykałdowe_zdięcie_albumu 0x7f1200c7
@@ -4365,9 +4372,12 @@ int string ucrop_scale 0x7f1200dc
 int string utworz_konto 0x7f1200dd
 int string utworz_nowa_kolekcje 0x7f1200de
 int string utworzone 0x7f1200df
+int string wpisz_login_oraz_haslo_aby_sie_zalogowac 0x7f1200ec
 int string wpisz_swoj_login 0x7f1200e0
 int string wybierz_kolor 0x7f1200e1
 int string wybierz_kolor_czcionki 0x7f1200e2
+int string zaloguj_sie 0x7f1200ed
+int string zapamietaj_mnie 0x7f1200ee
 int string zapisz 0x7f1200e3
 int string zmie_kolor_pojemnika 0x7f1200e4
 int string zmien_kolor_czcionki 0x7f1200e5

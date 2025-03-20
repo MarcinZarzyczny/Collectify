@@ -315,8 +315,9 @@ public class AddNewAccount extends Fragment {
                             // Oczyść login z niepożadanych zanków
                             String creatingLoginTwoo = Jsoup.parse(creatingLogin.getText().toString()).text();
                             // Utwurz nowe konto
-                            Account account = new Account(creatingLoginTwoo, password);
-                            accounts.setAccounts(account); // Dodaj konto do listy
+                            Account account = new Account(creatingLoginTwoo, password, false);
+                            // Dodaj konto do listy
+                            accounts.setAccounts(account);
                             // Przejdź do panelu logowania
                             FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                             transaction.replace(R.id.fragment_container, LoginFragment.class, null);

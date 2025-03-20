@@ -7,10 +7,10 @@
       </SelectionState>
       <SelectionState runConfigName="Collectify">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-03-17T18:38:20.617484200Z">
+        <DropdownSelection timestamp="2025-03-19T20:06:33.144139600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=RF8R812EH4V" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\kanan\.android\avd\Pixel_7_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>
