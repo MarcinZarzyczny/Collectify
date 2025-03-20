@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,7 +69,8 @@
                         android:drawablePadding="10dp"
                         android:drawableTint="#36115D"
                         android:ems="10"
-                        android:inputType="text" />
+                        android:hint="@string/login"
+                        tools:ignore="ContentDescription,LabelFor,TextFields" />
 
                     <TextView
                         android:id="@+id/passwordCorrectnessMessage"
@@ -85,7 +87,7 @@
                     <EditText
                         android:id="@+id/creatingPassword"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="41dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="20dp"
@@ -94,7 +96,10 @@
                         android:drawablePadding="10dp"
                         android:drawableTint="#36115D"
                         android:ems="10"
-                        android:inputType="textPassword" />
+                        android:importantForAutofill="no"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        tools:ignore="LabelFor" />
 
                     <TextView
                         android:id="@+id/passwordMatchMessage"
@@ -121,7 +126,10 @@
                         android:drawablePadding="10dp"
                         android:drawableTint="#36115D"
                         android:ems="10"
-                        android:inputType="textPassword" />
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"
+                        tools:ignore="LabelFor" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
@@ -167,7 +175,8 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                tools:ignore="RtlHardcoded">
 
                 <ImageButton
                     android:id="@+id/imageButton2"
@@ -191,7 +200,8 @@
                 android:layout_weight="1"
                 android:layoutMode="clipBounds"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                tools:ignore="RtlHardcoded">
 
                 <ImageButton
                     android:id="@+id/addAnAccount"

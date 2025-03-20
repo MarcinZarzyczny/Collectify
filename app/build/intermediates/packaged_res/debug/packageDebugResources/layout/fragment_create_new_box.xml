@@ -263,7 +263,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/podaj_nazwe_kontenera"
+                        android:text="@string/podaj_nazwe_kolekcji"
                         android:textAlignment="center"
                         android:textColor="#C82323" />
 

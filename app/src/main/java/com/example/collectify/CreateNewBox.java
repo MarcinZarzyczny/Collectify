@@ -25,7 +25,6 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.mrudultora.colorpicker.ColorPickerPopUp;
 
@@ -264,7 +263,7 @@ public class CreateNewBox extends Fragment {
                 if(!startsWithWhitespace(boxNameValue.getText().toString()) && !boxNameValue.getText().toString().trim().isEmpty()){
                     Box box = new Box(boxName, opis, boxBackgroundColor, textColor, imageBitmap);
                     //Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
-                    Accounts.logindAccount.addNewBox(box);
+                    Accounts.loginAccount.addNewBox(box);
                     resetForm();
                     informationNameView.setText(R.string.nowa_kolekcja_dodana);
                 }

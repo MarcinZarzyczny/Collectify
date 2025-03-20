@@ -105,36 +105,26 @@ public class AddNewAccount extends Fragment {
         //Ustawienie dodatkowych stylów dla elementu ceratingLogin.
         creatingLogin.setBackground(border);
         creatingLogin.setPadding(15, creatingLogin.getPaddingTop(), creatingLogin.getPaddingRight(), creatingLogin.getPaddingBottom());
-        //Ustawianie początkowej wartości dla elementu creatingLogin.
-        creatingLogin.setText(R.string.login);
         //Ustawianie początkowej wartości dla elementu loginCorrectMessage.
         TextView loginCorrectMessage = requireActivity().findViewById(R.id.loginCorrectMessage);
         loginCorrectMessage.setText(R.string.info_login);
 
 
         //Ustawienie FocusChangeListenera dla pola creatoingLogin.
-        creatingLogin.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        /*creatingLogin.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             //Jeśli element uzyska fokus sprawdź wartość elementu
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    //Jeśli wartość pola wynosi Login wyczyść pole
-                    String log = "Login";
-                    if (creatingLogin.getText().toString().equals(log)) {
-                        creatingLogin.setText("");
-                    }
-                    //Jeśli element straci fokus sprawdź zawartość elementu
-                } else {
-                    //Jeśli element jest pusty lub wykryto biały znak ustaw dla niego wartość początkowa i ustaw komunikat poczatkowy.
-                    if (creatingLogin.getText().toString().isEmpty()) {
-                        creatingLogin.setText(R.string.login);
-                        creatingLogin.setTextColor(Color.parseColor("#36115D"));
-                        loginCorrectMessage.setText(R.string.info_login);
-                        loginCorrectMessage.setTextColor(Color.parseColor("#36115D"));
-                    }
+
+                //Jeśli element jest pusty lub wykryto biały znak ustaw dla niego wartość początkowa i ustaw komunikat poczatkowy.
+                if (creatingLogin.getText().toString().isEmpty()) {
+                    creatingLogin.setText(R.string.login);
+                    creatingLogin.setTextColor(Color.parseColor("#36115D"));
+                    loginCorrectMessage.setText(R.string.info_login);
+                    loginCorrectMessage.setTextColor(Color.parseColor("#36115D"));
                 }
             }
-        });
+        });*/
 
         // Ustawienie ChangedListener na pole loginu
         creatingLogin.addTextChangedListener(new TextWatcher() {

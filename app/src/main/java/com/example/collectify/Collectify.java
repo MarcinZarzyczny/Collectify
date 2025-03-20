@@ -42,8 +42,8 @@ public class Collectify extends AppCompatActivity {
 
 
         // Użyj getAccounts() do uzyskania listy kont
-        for (int i = 0; i < accounts.getAccounts().size(); i++) {
-            if (accounts.getAccounts().get(i).getDoNotLogOut() == true) {
+        for (int i = 0; i < accounts.getAccounts().size(); i++)
+            if (accounts.getAccounts().get(i).getDoNotLogOut()) {
                 // Utwórz instancję FragmentManager
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 // Rozpocznij transakcję
@@ -55,7 +55,7 @@ public class Collectify extends AppCompatActivity {
                 // Zatwierdź transakcję
                 fragmentTransaction.commit();
                 break;
-            }else{
+            } else {
                 // Utwórz instancję FragmentManager
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 // Rozpocznij transakcję
@@ -67,7 +67,6 @@ public class Collectify extends AppCompatActivity {
                 fragmentTransaction.commit();
                 break;
             }
-        }
     }
 
 }

@@ -3592,6 +3592,7 @@ id locale
 id login
 id loginButoon
 id loginCorrectMessage
+id loginIformation
 id loginUser
 id ltr
 id m3_side_sheet
@@ -3851,7 +3852,6 @@ id textView33
 id textView34
 id textView4
 id textView5
-id textView6
 id textView7
 id textView8
 id textView9
@@ -4197,8 +4197,8 @@ string clear_text_end_icon_content_description
 string dialog_negative_button_text
 string dialog_positive_button_text
 string dialog_title
+string dodaj_nowa_kolekcje
 string dodaj_nowy_album
-string dodaj_nowy_box
 string dodaj_opis_pojemnika
 string dodawanie_nowej_kolekcji
 string error_a11y_label
@@ -4231,6 +4231,8 @@ string information_form
 string item_view_role_description
 string login
 string login_busy
+string login_lub_haslo
+string logo_collectify
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4344,7 +4346,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string podaj_nazwe_kontenera
+string podaj_nazwe_kolekcji
 string podaj_poprawna_nazwe_kolekcji
 string powtorz_haslo
 string przykadowy_opis
@@ -4361,7 +4363,7 @@ string szt
 string todo
 string tworzenie_nowego_albumu
 string tworzenie_nowego_konta
-string tworzenie_nowego_kontenera
+string tworzenie_nowej_kolekcji
 string ucrop_crop
 string ucrop_error_input_data_is_absent
 string ucrop_label_edit_photo
@@ -4371,7 +4373,7 @@ string ucrop_mutate_exception_hint
 string ucrop_rotate
 string ucrop_scale
 string utworz_konto
-string utworz_nowa_kolekcje
+string utworz_nowy_zbior
 string utworzone
 string wpisz_login_oraz_haslo_aby_sie_zalogowac
 string wpisz_swoj_login

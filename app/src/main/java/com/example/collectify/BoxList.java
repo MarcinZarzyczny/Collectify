@@ -1,25 +1,15 @@
 package com.example.collectify;
 
-import static android.content.ContentValues.TAG;
-
-import android.content.Context;
-import android.graphics.Typeface;
 import android.os.Bundle;
 
-import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.util.Log;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -72,24 +62,23 @@ public class BoxList extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_box_list, container, false);
     }
     @Override
     public void onResume() {
         super.onResume();
-        Accounts accounts = new ViewModelProvider(requireActivity()).get(Accounts.class);
+        // Wstawianie nazwy zalogowanego urzytkownika do pola textView.
         TextView loginUser = requireActivity().findViewById(R.id.loginUser);
-        loginUser.setText(Accounts.logindAccount.getLogin());
+        loginUser.setText(Accounts.loginAccount.getLogin());
 
-
+        // Wstawianie listy zbioró do leyautu.
         LinearLayout myLayout = requireActivity().findViewById(R.id.box2);
         // Upewnij się, że myLayout nie jest null
         if (myLayout != null) {
-            Accounts.logindAccount.createBox(myLayout, requireContext());
+            Accounts.loginAccount.createBox(myLayout, requireContext());
         }
-
+        // Obsługa przycisko dodawania nowego zbioru.
         ImageButton addNewBox = requireActivity().findViewById(R.id.addNewBox);
         addNewBox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,7 +91,7 @@ public class BoxList extends Fragment {
             }
         });
 
-
+        // Obsługa przycisku ustawień.
         ImageButton openSetings = requireActivity().findViewById(R.id.openSettings);
         openSetings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,86 +100,9 @@ public class BoxList extends Fragment {
                 transaction.replace(R.id.fragment_container, Setting.class, null);
                 transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
-
-
             }
         });
 
 
     }
-    /*private void addCardView(String nazwa, String ilosc) {
-        {
-            CardView cardView = new CardView(requireContext());
-            LinearLayout.LayoutParams cardParams = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT);
-            cardView.setLayoutParams(cardParams);
-            cardView.setCardBackgroundColor(0xFFFBF8FB); // background
-            cardView.setCardElevation(16);
-            cardView.setRadius(100);
-            cardView.setCardBackgroundColor(0xFFFBF8F8);
-            cardView.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.white));
-
-
-            LinearLayout innerLayout = new LinearLayout(getContext());
-            innerLayout.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.MATCH_PARENT));
-            innerLayout.setOrientation(LinearLayout.HORIZONTAL);
-
-            ImageView imageView = new ImageView(getContext());
-            imageView.setLayoutParams(new LinearLayout.LayoutParams(300, 300));
-            imageView.setImageResource(R.mipmap.ic_launcher);
-            imageView.setVisibility(View.VISIBLE);
-            imageView.setPadding(0, 0, 10, 0);
-
-            LinearLayout textLayout = new LinearLayout(getContext());
-            textLayout.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.MATCH_PARENT));
-            textLayout.setOrientation(LinearLayout.VERTICAL);
-            textLayout.setGravity(Gravity.CENTER);
-
-            TextView titleTextView = new TextView(getContext());
-            titleTextView.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT));
-            titleTextView.setText(nazwa);
-            titleTextView.setTextColor(0xFF36115D);
-            titleTextView.setTextSize(16);
-            titleTextView.setTypeface(null, Typeface.BOLD);
-            titleTextView.setShadowLayer(1, 0, 0, 0xFF050505);
-
-
-            TextView quantityTextView = new TextView(getContext());
-            quantityTextView.setLayoutParams(new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT));
-            quantityTextView.setText("Zawartość: " + ilosc);
-            quantityTextView.setTextColor(0xFF36115D);
-            quantityTextView.setTextSize(10);
-
-            textLayout.addView(titleTextView);
-            textLayout.addView(quantityTextView);
-            innerLayout.addView(imageView);
-            innerLayout.addView(textLayout);
-            cardView.addView(innerLayout);
-
-            // Załóżmy, że cardView jest już zainicjalizowane
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT
-            );
-
-            // Ustaw marginesy (górny i dolny) na 10dp
-            int marginInDp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics());
-            params.setMargins(10, marginInDp, 10, marginInDp);
-
-            // Zastosuj LayoutParams do cardView
-            cardView.setLayoutParams(params);
-
-            myLayout.addView(cardView);
-
-        }
-    }*/
 }

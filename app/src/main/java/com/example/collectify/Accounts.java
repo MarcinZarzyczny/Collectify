@@ -8,12 +8,10 @@ import android.view.ViewGroup;
 
 import androidx.lifecycle.ViewModel;
 import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Objects;
 
 public class Accounts extends ViewModel {
     ArrayList<Account> accounts = new ArrayList<>();
-    static Account logindAccount = null;
+    static Account loginAccount = null;
     public void setAccounts(Account account) {
         this.accounts.add(account);
     }
@@ -25,7 +23,7 @@ public class Accounts extends ViewModel {
             if (this.accounts.get(i).getLogin().equals(login)) {
                 if (this.accounts.get(i).getPassword().equals(password)) {
                     accounts.get(i).setDoNotLogOut(doNotLogOut);
-                    logindAccount = accounts.get(i);
+                    loginAccount = accounts.get(i);
                     accountFind = true;
                 }
             }

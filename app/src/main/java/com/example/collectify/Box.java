@@ -32,7 +32,7 @@ public class Box extends ViewModel {
     private int boxBackgroundColor = 0; // Kolor tła
     private int textColor = 0; // Kolor tekstu
     public ArrayList<Object> boxList = new ArrayList<>();
-    private final int elements = boxList.size();
+    private int elements = boxList.size();
 
 
 
@@ -125,14 +125,11 @@ public class Box extends ViewModel {
         // Tworzenie CardView
         CardView cardViewTwo = new CardView(context);
         // Ustal rozmiar w dp
-        int heightInDp = 125;
 
-// Przekształć dp na px
-
-// Ustaw LayoutParams z wysokością w px
+        // Ustaw LayoutParams z wysokością w px
         LinearLayout.LayoutParams cardParamsTwo = new LinearLayout.LayoutParams(
-                400, // Szerokość
-                400// Wysokość
+                300, // Szerokość
+                300// Wysokość
         );
 
         cardViewTwo.setLayoutParams(cardParamsTwo);
@@ -146,7 +143,7 @@ public class Box extends ViewModel {
         // Tworzenie ImageView
         ImageView boxIconImage = new ImageView(context);
 
-        int imageSize = 400;
+        int imageSize = 300;
         int imageWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, imageSize, context.getResources().getDisplayMetrics());
         int imageHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, imageSize, context.getResources().getDisplayMetrics());
         boxIconImage.setLayoutParams(new LinearLayout.LayoutParams(imageWidth, imageHeight));

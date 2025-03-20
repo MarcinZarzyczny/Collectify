@@ -151,6 +151,7 @@ public class LoginFragment extends Fragment {
         });
 
         // Logowanie do aplikacji
+        TextView liginInformation = requireActivity().findViewById(R.id.loginIformation);
         Button openBoxList = requireActivity().findViewById(R.id.loginButoon);
         openBoxList.setBackgroundColor(color);
         openBoxList.setOnClickListener(new View.OnClickListener() {
@@ -166,9 +167,12 @@ public class LoginFragment extends Fragment {
                     transaction.replace(R.id.fragment_container, BoxList.class, null);
                     transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                     transaction.commit();
+                    liginInformation.setText(R.string.wpisz_login_oraz_haslo_aby_sie_zalogowac);
+                    liginInformation.setTextColor(Color.parseColor("#830808"));
                 //W przeciwnym wypadku wyswietl komunikat o błędzie
                 }else{
-                    Log.d(TAG, "Login lub hasło niepoprawne.");
+                    liginInformation.setText(R.string.login_lub_haslo);
+                    liginInformation.setTextColor(Color.parseColor("#830808"));
 
                 }
 

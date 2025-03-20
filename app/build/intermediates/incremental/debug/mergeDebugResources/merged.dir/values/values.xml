@@ -2140,8 +2140,8 @@
     <string name="dialog_negative_button_text">@android:string/cancel</string>
     <string name="dialog_positive_button_text">@android:string/ok</string>
     <string name="dialog_title">Choose Color</string>
+    <string name="dodaj_nowa_kolekcje">Dodaj nową kolekcję.</string>
     <string name="dodaj_nowy_album">Dodaj nowy album.</string>
-    <string name="dodaj_nowy_box">Dodaj nowy kontener.</string>
     <string name="dodaj_opis_pojemnika">Dodaj opis pojemnika</string>
     <string name="dodawanie_nowej_kolekcji">Dodawanie nowej kolekcji.</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
@@ -2172,10 +2172,12 @@
     <string name="info_password_six">W haśle brak cyfry.</string>
     <string name="info_password_three">Hasło zbyt długie.</string>
     <string name="info_password_two">Hasło poprawne.</string>
-    <string name="information_form">Tworzenie nowego kontenera.</string>
+    <string name="information_form">Tworzenie nowegej kolekcji.</string>
     <string name="item_view_role_description">Tab</string>
     <string name="login">Login</string>
     <string name="login_busy">Login niedostepny.</string>
+    <string name="login_lub_haslo">Login lub hasło niepoprawne.</string>
+    <string name="logo_collectify">Logo Collectify</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string name="m3_ref_typeface_brand_medium" translatable="false">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular" translatable="false">sans-serif</string>
@@ -2295,7 +2297,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
-    <string name="podaj_nazwe_kontenera">Podaj nazwę kontenera.</string>
+    <string name="podaj_nazwe_kolekcji">Podaj nazwę kolekcji.</string>
     <string name="podaj_poprawna_nazwe_kolekcji">Podaj poprawną nazwę kolekcji.</string>
     <string name="powtorz_haslo">Powtórz hasło.</string>
     <string name="przykadowy_opis">Opis</string>
@@ -2314,7 +2316,7 @@
     <string name="todo">TODO</string>
     <string name="tworzenie_nowego_albumu">Tworzenie nowego albumu.</string>
     <string name="tworzenie_nowego_konta">Tworzenie nowego konta.</string>
-    <string name="tworzenie_nowego_kontenera">Tworzenie nowego kontenera.</string>
+    <string name="tworzenie_nowej_kolekcji">Tworzenie nowego kolekcji.</string>
     <string name="ucrop_crop">Crop</string>
     <string name="ucrop_error_input_data_is_absent" translatable="false">Both input and output Uri must be specified</string>
     <string name="ucrop_label_edit_photo">Edit Photo</string>
@@ -2324,7 +2326,7 @@
     <string name="ucrop_rotate">Rotate</string>
     <string name="ucrop_scale">Scale</string>
     <string name="utworz_konto">Utwórz konto.</string>
-    <string name="utworz_nowa_kolekcje">Utwórz nową kolekcję.</string>
+    <string name="utworz_nowy_zbior">Utwórz nowy zbiór.</string>
     <string name="utworzone">Utworzone: 22.11.2024</string>
     <string name="wpisz_login_oraz_haslo_aby_sie_zalogowac">Wpisz login oraz hasło, aby się zalogować.</string>
     <string name="wpisz_swoj_login">Wpisz swój login.</string>

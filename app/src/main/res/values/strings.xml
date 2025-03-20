@@ -25,7 +25,7 @@
     <string name="name_email_com">name@email.com</string>
     <string name="opis">Opis:</string>
     <string name="new_box_name">Nazwa</string>
-    <string name="information_form">Tworzenie nowego kontenera.</string>
+    <string name="information_form">Tworzenie nowegej kolekcji.</string>
     <string name="box_sample_name">Box 1</string>
     <string name="box_saple_quantity">12 szt.</string>
     <string name="todo">TODO</string>
@@ -47,11 +47,11 @@
     <string name="i">i</string>
     <string name="utworz_konto">Utwórz konto.</string>
     <string name="tworzenie_nowego_konta">Tworzenie nowego konta.</string>
-    <string name="tworzenie_nowego_kontenera">Tworzenie nowego kontenera.</string>
-    <string name="podaj_nazwe_kontenera">Podaj nazwę kontenera.</string>
+    <string name="tworzenie_nowej_kolekcji">Tworzenie nowego kolekcji.</string>
+    <string name="podaj_nazwe_kolekcji">Podaj nazwę kolekcji.</string>
     <string name="tworzenie_nowego_albumu">Tworzenie nowego albumu.</string>
-    <string name="utworz_nowa_kolekcje">Utwórz nową kolekcję.</string>
-    <string name="dodaj_nowy_box">Dodaj nowy kontener.</string>
+    <string name="utworz_nowy_zbior">Utwórz nowy zbiór.</string>
+    <string name="dodaj_nowa_kolekcje">Dodaj nową kolekcję.</string>
     <string name="box">Box</string>
     <string name="dodaj_nowy_album">Dodaj nowy album.</string>
     <string name="album">Album</string>
@@ -68,6 +68,8 @@
     <string name="dodawanie_nowej_kolekcji">Dodawanie nowej kolekcji.</string>
     <string name="otworz_ustawienia">Otwórz ustawienia.</string>
     <string name="ikona_konta">Ikona konta</string>
+    <string name="logo_collectify">Logo Collectify</string>
+    <string name="login_lub_haslo">Login lub hasło niepoprawne.</string>
 
 
 </resources>

@@ -82,10 +82,11 @@
                         android:layout_width="163dp"
                         android:layout_height="136dp"
                         android:layout_marginBottom="5dp"
+                        android:contentDescription="@string/logo_collectify"
                         android:src="@mipmap/ic_launcher" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/loginIformation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/wpisz_login_oraz_haslo_aby_sie_zalogowac"

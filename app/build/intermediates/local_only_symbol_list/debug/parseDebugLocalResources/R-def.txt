@@ -72,6 +72,7 @@ id linearLayout3
 id login
 id loginButoon
 id loginCorrectMessage
+id loginIformation
 id loginUser
 id main
 id openAddnewAccont
@@ -111,7 +112,6 @@ id textView33
 id textView34
 id textView4
 id textView5
-id textView6
 id textView7
 id textView8
 id textView9
@@ -133,8 +133,8 @@ string box
 string box_one
 string box_sample_name
 string box_saple_quantity
+string dodaj_nowa_kolekcje
 string dodaj_nowy_album
-string dodaj_nowy_box
 string dodaj_opis_pojemnika
 string dodawanie_nowej_kolekcji
 string haslo_nie_moze_być_krotsze_niz_6_znakow
@@ -159,6 +159,8 @@ string info_password_two
 string information_form
 string login
 string login_busy
+string login_lub_haslo
+string logo_collectify
 string na_poczatku_nazwy_nie_moze_byc_bialego_znaku
 string name_email_com
 string nazwa
@@ -167,7 +169,7 @@ string nowa_kolekcja_dodana
 string opis
 string otworz_ustawienia
 string password
-string podaj_nazwe_kontenera
+string podaj_nazwe_kolekcji
 string podaj_poprawna_nazwe_kolekcji
 string powtorz_haslo
 string przykadowy_opis
@@ -177,9 +179,9 @@ string szt
 string todo
 string tworzenie_nowego_albumu
 string tworzenie_nowego_konta
-string tworzenie_nowego_kontenera
+string tworzenie_nowej_kolekcji
 string utworz_konto
-string utworz_nowa_kolekcje
+string utworz_nowy_zbior
 string utworzone
 string wpisz_login_oraz_haslo_aby_sie_zalogowac
 string wpisz_swoj_login
