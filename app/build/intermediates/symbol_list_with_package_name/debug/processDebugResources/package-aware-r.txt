@@ -3394,7 +3394,6 @@ id boxTitle
 id boxVidget
 id button3
 id button4
-id button5
 id button6
 id buttonPanel
 id cache_measures
@@ -4229,6 +4228,7 @@ string info_password_three
 string info_password_two
 string information_form
 string item_view_role_description
+string litera_i
 string login
 string login_busy
 string login_lub_haslo

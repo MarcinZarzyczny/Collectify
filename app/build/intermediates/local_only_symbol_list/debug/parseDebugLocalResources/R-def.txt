@@ -44,7 +44,6 @@ id boxTitle
 id boxVidget
 id button3
 id button4
-id button5
 id button6
 id cardView
 id changeBoxColor
@@ -157,6 +156,7 @@ string info_password_six
 string info_password_three
 string info_password_two
 string information_form
+string litera_i
 string login
 string login_busy
 string login_lub_haslo

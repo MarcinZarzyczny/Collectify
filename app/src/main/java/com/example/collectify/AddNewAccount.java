@@ -91,7 +91,7 @@ public class AddNewAccount extends Fragment {
         viewModel.getSelectedData().observe(this, new Observer<String>() {
             @Override
             public void onChanged(String name) {
-                Log.d(TAG, " LF- Dane otrzymane: " + name);
+                Log.d("TAG", " LF- Dane otrzymane: " + name);
             }
         });
 

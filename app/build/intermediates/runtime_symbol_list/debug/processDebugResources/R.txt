@@ -3393,7 +3393,6 @@ int id boxTitle 0x7f0a0071
 int id boxVidget 0x7f0a0072
 int id button3 0x7f0a0073
 int id button4 0x7f0a0074
-int id button5 0x7f0a0075
 int id button6 0x7f0a0076
 int id buttonPanel 0x7f0a0077
 int id cache_measures 0x7f0a0078
@@ -4228,6 +4227,7 @@ int string info_password_three 0x7f120050
 int string info_password_two 0x7f120051
 int string information_form 0x7f120052
 int string item_view_role_description 0x7f120053
+int string litera_i 0x7f1200f8
 int string login 0x7f120054
 int string login_busy 0x7f120055
 int string login_lub_haslo 0x7f1200f2

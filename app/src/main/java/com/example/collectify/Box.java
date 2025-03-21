@@ -252,7 +252,17 @@ public class Box extends ViewModel {
 
         // Dodawanie cardView do myLayout
         myLayout.addView(cardView);
+        // Obsługa przycisko dodawania nowego zbioru.
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Log.d("TAG", "Kliknięto element" + Box.this.containerName);
+
+
+            }
+        });
 
     }
+
 
 }

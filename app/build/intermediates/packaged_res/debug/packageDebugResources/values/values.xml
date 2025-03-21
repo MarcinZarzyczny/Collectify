@@ -57,6 +57,7 @@
     <string name="info_password_three">Hasło zbyt długie.</string>
     <string name="info_password_two">Hasło poprawne.</string>
     <string name="information_form">Tworzenie nowegej kolekcji.</string>
+    <string name="litera_i">i</string>
     <string name="login">Login</string>
     <string name="login_busy">Login niedostepny.</string>
     <string name="login_lub_haslo">Login lub hasło niepoprawne.</string>

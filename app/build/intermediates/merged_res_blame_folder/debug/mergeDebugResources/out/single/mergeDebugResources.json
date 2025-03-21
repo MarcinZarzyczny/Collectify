@@ -28,6 +28,10 @@
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable-mdpi\\ic_action_name.png"
     },
     {
+        "merged": "com.example.collectify.app-debug-36:/layout-land_fragment_add_new_account.xml.flat",
+        "source": "com.example.collectify.app-main-38:/layout-land/fragment_add_new_account.xml"
+    },
+    {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\layout-land_fragment_add_new_account.xml.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\layout-land\\fragment_add_new_account.xml"
     },
@@ -122,10 +126,6 @@
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\drawable_saveicon.xml.flat",
         "source": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-main-38:\\drawable\\saveicon.xml"
-    },
-    {
-        "merged": "com.example.collectify.app-debug-36:/layout_fragment_create_colection_box.xml.flat",
-        "source": "com.example.collectify.app-main-38:/layout/fragment_create_colection_box.xml"
     },
     {
         "merged": "C:\\Users\\kanan\\.gradle\\daemon\\8.10.2\\com.example.collectify.app-debug-36:\\mipmap-mdpi_icon_collectify.webp.flat",
