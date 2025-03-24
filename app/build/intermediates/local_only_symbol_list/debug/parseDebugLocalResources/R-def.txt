@@ -34,6 +34,7 @@ font artifika
 id addAnAccount
 id addNewBox
 id addPhotoButton
+id bccv
 id box2
 id boxContents
 id boxCreationDate

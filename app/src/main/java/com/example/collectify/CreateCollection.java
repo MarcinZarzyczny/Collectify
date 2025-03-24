@@ -75,8 +75,6 @@ public class CreateCollection extends Fragment {
                 AddNewAccount AddNewAccount = new AddNewAccount();
                 FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, CreateNewBox.class, null);
-                ; // R.id.fragment_container to ID kontenera w głównym layout
-                transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
 
             }
@@ -89,7 +87,6 @@ public class CreateCollection extends Fragment {
                 AddNewAccount AddNewAccount = new AddNewAccount();
                 FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment_container, CreateNewAlbum.class, null);
-                ; // R.id.fragment_container to ID kontenera w głównym layout
                 transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
                 transaction.commit();
 

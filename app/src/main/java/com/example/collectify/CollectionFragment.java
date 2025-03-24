@@ -1,8 +1,10 @@
 package com.example.collectify;
 
 import android.annotation.SuppressLint;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
@@ -83,20 +85,32 @@ public class CollectionFragment extends Fragment {
         //Wstawianie zazwy
         TextView name =  requireActivity().findViewById(R.id.name);
         name.setText(activeElements.getActiveBox().getContainerName());
-        name.setTextColor(activeElements.getActiveBox().getTextColor());
-        name.setBackgroundColor(activeElements.getActiveBox().getBoxBackgroundColor());
+        name.setTextColor(activeElements.getActiveBox().getBoxBackgroundColor());
+        name.setBackgroundColor(activeElements.getActiveBox().getTextColor());//
+        CardView bccv =  requireActivity().findViewById(R.id.bccv);
+        //bccv.setBackgroundColor(activeElements.getActiveBox().getBoxBackgroundColor());
+        int dpValue = 30;
+        float pxValue = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpValue, getResources().getDisplayMetrics());
+        // Ustaw tło jako GradientDrawable
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setColor(activeElements.getActiveBox().getBoxBackgroundColor());//lorem ipsum lorem ipsum
+        drawable.setCornerRadius(pxValue); // Ustaw promień zaokrąglenia
+        bccv.setBackground(drawable); // Ustaw tło widżetu
 
-
-        //Wstawianie zawartośći
+        //Wstawianie lirzby zapisanych elementów
         TextView contents =  requireActivity().findViewById(R.id.contents);
         contents.setText(String.format("%d szt.", activeElements.getActiveBox().getElements())); //activeElements.getActiveBox().getElements()));
-
+        contents.setTextColor(activeElements.getActiveBox().getTextColor());
         //Wstawianie daty
         TextView creationData =  requireActivity().findViewById(R.id.creationData);
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
         creationData.setText(String.format("Utworzono: %s ",sdf.format(activeElements.getActiveBox().getBoxCreateDate())));
+        creationData.setTextColor(activeElements.getActiveBox().getTextColor());
+
+        //Wstawianie opisu
         TextView description = requireActivity().findViewById(R.id.description);
         description.setText(activeElements.getActiveBox().getDescription());
+        description.setTextColor(activeElements.getActiveBox().getTextColor());
         //Watawianie zdięcia
         ImageView collectionPhoto = requireActivity().findViewById(R.id.collectionPhoto);
         if(activeElements.getActiveBox().getPhoto() == null){
