@@ -5,6 +5,7 @@ import static android.content.ContentValues.TAG;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -25,10 +26,9 @@ import java.util.Locale;
 public class Box extends ViewModel {
     private String containerName = null;
     private final Date boxCreateDate = new Date(); // Data utworzenia
-    private int photo = 0; // Zdjęcie (możesz użyć innego typu, jeśli to konieczne)
     private final Bitmap imageBitmap;
 
-    private String boxInformation = null; // Informacje o pudełku
+    private String description = null; // Informacje o pudełku
     private int boxBackgroundColor = 0; // Kolor tła
     private int textColor = 0; // Kolor tekstu
     public ArrayList<Object> boxList = new ArrayList<>();
@@ -40,7 +40,7 @@ public class Box extends ViewModel {
     public Box(String name, String boxInformation, int boxBackgroundColor, int textColor, Bitmap imageBitmap) {
         this.containerName = name;
         this.imageBitmap = imageBitmap;
-        this.boxInformation = boxInformation;
+        this.description = boxInformation;
         this.boxBackgroundColor = boxBackgroundColor;
         this.textColor = textColor;
         Log.d(TAG, "--------------");
@@ -58,20 +58,17 @@ public class Box extends ViewModel {
         return boxCreateDate;
     }
 
-    public int getPhoto() {
-        return photo;
+    public Bitmap getPhoto() {
+        return imageBitmap;
     }
 
-    public void setPhoto(int photo) {
-        this.photo = photo;
+
+    public String getDescription() {
+        return description;
     }
 
-    public String getBoxInformation() {
-        return boxInformation;
-    }
-
-    public void setBoxInformation(String boxInformation) {
-        this.boxInformation = boxInformation;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getBoxBackgroundColor() {
@@ -90,7 +87,11 @@ public class Box extends ViewModel {
         this.textColor = textColor;
     }
 
-    public void createBox(ViewGroup myLayout, Context context) {
+    public int getElements() {
+        return elements;
+    }
+
+    public void createBox(ViewGroup myLayout, Context context, BoxList fragment) {
 
         // Tworzenie CardView
         CardView cardView = new CardView(context);
@@ -199,7 +200,7 @@ public class Box extends ViewModel {
         titleTextView.setTypeface(null, Typeface.BOLD);
         titleTextView.setShadowLayer(1, 0, 0, 0xFF050505);
 
-        // Tworzenie TextView dla ilości
+        // Tworzenie TextView dla zawartosći
         TextView quantityTextView = new TextView(context);
         quantityTextView.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
@@ -217,7 +218,7 @@ public class Box extends ViewModel {
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault());
-        quantityTextView2.setText(String.format("Utworzono: %s ",sdf.format(boxCreateDate)));
+        quantityTextView2.setText(String.format("Utworzono: %s ",sdf.format(boxCreateDate)));//
         quantityTextView2.setTextColor(this.textColor);
         quantityTextView2.setPadding(20, 0,0,0);
         quantityTextView2.setTextSize(fontSize);
@@ -256,7 +257,10 @@ public class Box extends ViewModel {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                Log.d("TAG", "Kliknięto element" + Box.this.containerName);
+                fragment.onBoxClicked(Box.this); // Przekazanie wskaźnika do obiektu Box
+
 
 
             }

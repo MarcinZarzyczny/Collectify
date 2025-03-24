@@ -63,7 +63,7 @@ public class Accounts extends ViewModel {
             ArrayList<Object> boxList = this.accounts.get(i).getBoxList();
             for (int index = 0; index < boxList.size(); index++) {
                 if (boxList.get(index) instanceof Box) {
-                    ((Box) boxList.get(index)).createBox(myLayout, context);
+                    ((Box) boxList.get(index)).createBox(myLayout, context, null);
                 }
             }
         }

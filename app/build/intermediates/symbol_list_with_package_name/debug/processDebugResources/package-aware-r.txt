@@ -3423,6 +3423,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id collectionPhoto
 id colorPaletteRelLayout
 id colorPickerBaseLayout
 id colorPickerLinearLayout
@@ -3434,6 +3435,7 @@ id constraint
 id container
 id content
 id contentPanel
+id contents
 id contiguous
 id continuousVelocity
 id controls_shadow
@@ -3444,6 +3446,7 @@ id counterclockwise
 id cradle
 id creatingLogin
 id creatingPassword
+id creationData
 id currentState
 id cursor_alpha
 id cursor_colorpicker
@@ -3458,6 +3461,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3551,6 +3555,7 @@ id ignoreRequest
 id image
 id imageButton
 id imageButton2
+id imageButton4
 id imageView3
 id image_view_crop
 id image_view_logo
@@ -3657,6 +3662,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -4056,6 +4062,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_add_new_account
 layout fragment_box_list
+layout fragment_collection
 layout fragment_create_colection_box
 layout fragment_create_new_album
 layout fragment_create_new_box

@@ -3422,6 +3422,7 @@ int id clip_vertical 0x7f0a008f
 int id clockwise 0x7f0a0090
 int id closest 0x7f0a0091
 int id collapseActionView 0x7f0a0092
+int id collectionPhoto 0x7f0a028f
 int id colorPaletteRelLayout 0x7f0a0093
 int id colorPickerBaseLayout 0x7f0a0094
 int id colorPickerLinearLayout 0x7f0a0095
@@ -3433,6 +3434,7 @@ int id constraint 0x7f0a009a
 int id container 0x7f0a009b
 int id content 0x7f0a009c
 int id contentPanel 0x7f0a009d
+int id contents 0x7f0a0290
 int id contiguous 0x7f0a009e
 int id continuousVelocity 0x7f0a009f
 int id controls_shadow 0x7f0a00a0
@@ -3443,6 +3445,7 @@ int id counterclockwise 0x7f0a00a4
 int id cradle 0x7f0a00a5
 int id creatingLogin 0x7f0a00a6
 int id creatingPassword 0x7f0a00a7
+int id creationData 0x7f0a0291
 int id currentState 0x7f0a00a8
 int id cursor_alpha 0x7f0a00a9
 int id cursor_colorpicker 0x7f0a00aa
@@ -3457,6 +3460,7 @@ int id decor_content_parent 0x7f0a00b2
 int id default_activity_button 0x7f0a00b3
 int id deltaRelative 0x7f0a00b4
 int id dependency_ordering 0x7f0a00b5
+int id description 0x7f0a0292
 int id design_bottom_sheet 0x7f0a00b6
 int id design_menu_item_action_area 0x7f0a00b7
 int id design_menu_item_action_area_stub 0x7f0a00b8
@@ -3550,6 +3554,7 @@ int id ignoreRequest 0x7f0a010f
 int id image 0x7f0a0110
 int id imageButton 0x7f0a0111
 int id imageButton2 0x7f0a0112
+int id imageButton4 0x7f0a028b
 int id imageView3 0x7f0a0113
 int id image_view_crop 0x7f0a0114
 int id image_view_logo 0x7f0a0115
@@ -3656,6 +3661,7 @@ int id mtrl_picker_text_input_range_start 0x7f0a0175
 int id mtrl_picker_title_text 0x7f0a0176
 int id mtrl_view_tag_bottom_padding 0x7f0a0177
 int id multiply 0x7f0a0178
+int id name 0x7f0a0293
 int id navigation_bar_item_active_indicator_view 0x7f0a0179
 int id navigation_bar_item_icon_container 0x7f0a017a
 int id navigation_bar_item_icon_view 0x7f0a017b
@@ -4055,6 +4061,7 @@ int layout design_text_input_end_icon 0x7f0d002b
 int layout design_text_input_start_icon 0x7f0d002c
 int layout fragment_add_new_account 0x7f0d002d
 int layout fragment_box_list 0x7f0d002e
+int layout fragment_collection 0x7f0d007f
 int layout fragment_create_colection_box 0x7f0d002f
 int layout fragment_create_new_album 0x7f0d0030
 int layout fragment_create_new_box 0x7f0d0031

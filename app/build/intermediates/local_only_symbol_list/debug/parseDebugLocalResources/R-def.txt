@@ -48,8 +48,12 @@ id button6
 id cardView
 id changeBoxColor
 id changeTextColor
+id collectionPhoto
+id contents
 id creatingLogin
 id creatingPassword
+id creationData
+id description
 id dram
 id editTextPassword
 id fragment_container
@@ -62,6 +66,7 @@ id guideline8
 id guideline9
 id imageButton
 id imageButton2
+id imageButton4
 id imageView3
 id informationNameBox
 id informationPanelButton
@@ -74,6 +79,7 @@ id loginCorrectMessage
 id loginIformation
 id loginUser
 id main
+id name
 id openAddnewAccont
 id openCreateAlbum
 id openCreateBox
@@ -117,6 +123,7 @@ id textView9
 layout activity_collectify
 layout fragment_add_new_account
 layout fragment_box_list
+layout fragment_collection
 layout fragment_create_colection_box
 layout fragment_create_new_album
 layout fragment_create_new_box

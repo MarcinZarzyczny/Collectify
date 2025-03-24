@@ -18,8 +18,6 @@ import java.util.HashMap;
 
 public class Collectify extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

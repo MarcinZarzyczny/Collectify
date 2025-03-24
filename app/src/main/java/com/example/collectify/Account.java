@@ -66,10 +66,10 @@ public class Account extends ViewModel {
     }
 
 
-    public void createBox(LinearLayout myLayout, Context context) {
+    public void createBox(LinearLayout myLayout, Context context, BoxList fragment) {
         for (int index = 0; index < this.boxList.size(); index++) {
             if (this.boxList.get(index) instanceof Box) {
-                ((Box) this.boxList.get(index)).createBox(myLayout, context);
+                ((Box) this.boxList.get(index)).createBox(myLayout, context, fragment);
             }
         }
     }

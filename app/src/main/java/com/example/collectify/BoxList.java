@@ -2,6 +2,9 @@ package com.example.collectify;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Objects;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,6 +26,11 @@ public class BoxList extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    public Box selectedBox = null;
+    ActiveElements activeElements;
+
+
 
     public BoxList() {
         // Required empty public constructor
@@ -59,11 +68,16 @@ public class BoxList extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_box_list, container, false);
     }
     @Override
     public void onResume() {
         super.onResume();
+
+         activeElements = new ViewModelProvider(requireActivity()).get(ActiveElements.class);
+
+
         // Wstawianie nazwy zalogowanego urzytkownika do pola textView.
         TextView loginUser = requireActivity().findViewById(R.id.loginUser);
         loginUser.setText(Accounts.loginAccount.getLogin());
@@ -72,7 +86,7 @@ public class BoxList extends Fragment {
         LinearLayout myLayout = requireActivity().findViewById(R.id.box2);
         // Upewnij się, że myLayout nie jest null
         if (myLayout != null) {
-            Accounts.loginAccount.createBox(myLayout, requireContext());
+            Accounts.loginAccount.createBox(myLayout, requireContext(), this);
         }
         // Obsługa przycisko dodawania nowego zbioru.
         ImageButton addNewBox = requireActivity().findViewById(R.id.addNewBox);
@@ -100,5 +114,16 @@ public class BoxList extends Fragment {
         });
 
 
+
     }
+    public void onBoxClicked(Box box) {
+        selectedBox = box;
+        activeElements.setActiveBox(selectedBox); // Przypisanie wskaźnika do zmiennej
+        Log.d("TAG", "Wybrano pudełko: " + selectedBox.getContainerName());
+        FragmentTransaction transaction = Objects.requireNonNull(requireActivity()).getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, CollectionFragment.class, null);
+        transaction.addToBackStack(null); // Dodaj do stosu, jeśli chcesz umożliwić powrót
+        transaction.commit();
+    }
+
 }
